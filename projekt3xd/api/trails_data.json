@@ -1,0 +1,856 @@
+[
+  {
+    "id": "34392",
+    "name": "Wisła",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 1.047,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "946701",
+    "name": "Motława",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 64.7,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "2214056",
+    "name": "Szlak Źródła Marii",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 10.5,
+    "elevation_m": 0.0,
+    "difficulty": 2,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2246133",
+    "name": "Szlak Trójmiejski",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 46.2,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2255855",
+    "name": "Szlak Motławski",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 35.8,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2396873",
+    "name": "Szlak Kartuski",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 67.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2396874",
+    "name": "Szlak Wzgórz Szymbarskich",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 0.126,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2909638",
+    "name": "Szlak Skarszewski",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 80.3,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2989160",
+    "name": "Szlak Fortyfikacji Nadmorskich",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 8.0,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "3011407",
+    "name": "Szlak Wyspy Sobieszewskiej",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 10.0,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "13262625",
+    "name": "Szlak Ósmego Widoku",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 2.3,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "14036389",
+    "name": "Łącznik fioletowy TPK",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 2.1,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "14036457",
+    "name": "Łącznik fioletowy TPK",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 6.0,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "14036469",
+    "name": "Łącznik Fioletowy TPK",
+    "region": "Gdańsk",
+    "coordinates": null,
+    "length_km": 0.8,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "34392",
+    "name": "Wisła",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 1.047,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "120876",
+    "name": "Południowy Szlak Krawędziowy",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 49.8,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "164363",
+    "name": "Szlak im. Stefana Żeromskiego",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 7.3,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "309148",
+    "name": "Warszawska Obwodnica Turystyczna",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 209.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "338145",
+    "name": "Kabaty - Powsin",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 27.7,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1282663",
+    "name": "Stara Miłosna - Warszawa Anin",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 10.5,
+    "elevation_m": 0.0,
+    "difficulty": 2,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1282690",
+    "name": "Szlak Piaszczystą Percią",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 23.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1282693",
+    "name": "Na przedpolach stolicy",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 28.5,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1282710",
+    "name": "Łącznik Falenicki",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 3.0,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1339029",
+    "name": "Bielańskim szlakiem",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 13.9,
+    "elevation_m": 0.0,
+    "difficulty": 2,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1339102",
+    "name": "Podwarszawski Szlak Pamięci",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 11.7,
+    "elevation_m": 0.0,
+    "difficulty": 2,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1341871",
+    "name": "Szlak Przechadzkowy",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 7.3,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1396129",
+    "name": "Warszawa Dawidy - Cieszyca",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 16.4,
+    "elevation_m": 0.0,
+    "difficulty": 2,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1396142",
+    "name": "Powsin - Warszawa Dawidy",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 11.0,
+    "elevation_m": 0.0,
+    "difficulty": 2,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1411807",
+    "name": "Łącznik józefowski",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 9.5,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2680746",
+    "name": "Ścieżka biegowa \"Falenica\"",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 3.3,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": [
+      "roundtrip"
+    ]
+  },
+  {
+    "id": "5710659",
+    "name": "Ścieżka biegowa \"Las Sobieskiego\"",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 3.5,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": [
+      "roundtrip"
+    ]
+  },
+  {
+    "id": "5710689",
+    "name": "Ścieżka biegowa \"Międzylesie\"",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 5.0,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": [
+      "roundtrip"
+    ]
+  },
+  {
+    "id": "7576985",
+    "name": "Długa",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 47.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "7578381",
+    "name": "Łada",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 56.5,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "11957571",
+    "name": "Marysin Wawerski - Sulejówek PKP",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 12.3,
+    "elevation_m": 0.0,
+    "difficulty": 2,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "12295954",
+    "name": "Zalesie Górne, PKP - Kabaty",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 28.1,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "12296156",
+    "name": "Rezerwat Park Natoliński - Latoszki",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 4.5,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "13540191",
+    "name": "Ścieżka biegowa \"Lucerny\"",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 1.25,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": [
+      "roundtrip"
+    ]
+  },
+  {
+    "id": "13732436",
+    "name": "Dookoła Mazowieckiego Parku Krajobrazowego",
+    "region": "Warszawa",
+    "coordinates": null,
+    "length_km": 176.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": [
+      "roundtrip"
+    ]
+  },
+  {
+    "id": "25044435",
+    "name": "Śluza Przewóz",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 85.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "motorboat"
+    ]
+  },
+  {
+    "id": "398819278",
+    "name": "Śluza Dąbie",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 85.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "lock",
+      "motorboat"
+    ]
+  },
+  {
+    "id": "672922898",
+    "name": "Śluza Przewóz",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 85.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "lock",
+      "motorboat"
+    ]
+  },
+  {
+    "id": "672922899",
+    "name": "Śluza Przewóz",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 85.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "motorboat"
+    ]
+  },
+  {
+    "id": "34392",
+    "name": "Wisła",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 1.047,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "1697841",
+    "name": "Szlak Orlich Gniazd",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 0.16390000000000002,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2900696",
+    "name": "Prądnik",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 33.4,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "2900774",
+    "name": "Rudawa",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 35.8,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "3792707",
+    "name": "Szlak Twierdzy Kraków - pętla północna",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 60.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "3897354",
+    "name": "Trasa Turystyczno-Kulturowa Prądnika Czerwonego",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 5.7,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "6726640",
+    "name": "Błonia",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 3.0,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": [
+      "roundtrip"
+    ]
+  },
+  {
+    "id": "7580417",
+    "name": "Skawinka",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 34.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "16104097",
+    "name": "Szlak Twierdzy Kraków - pętla południowa",
+    "region": "Kraków",
+    "coordinates": null,
+    "length_km": 41.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "49947176",
+    "name": "Śluza Opatowice",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 74.6,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "lock"
+    ]
+  },
+  {
+    "id": "127207811",
+    "name": "śluza Szczytniki",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 55.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "lock"
+    ]
+  },
+  {
+    "id": "127208699",
+    "name": "Śluza Bartoszowice",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 0.18769999999999998,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": [
+      "lock"
+    ]
+  },
+  {
+    "id": "127209490",
+    "name": "Śluza Miejska",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 55.8,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "lock"
+    ]
+  },
+  {
+    "id": "127209497",
+    "name": "Śluza Różanka",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 0.193,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": [
+      "lock"
+    ]
+  },
+  {
+    "id": "127211797",
+    "name": "Śluza Rędzin I",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 0.203,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": [
+      "lock"
+    ]
+  },
+  {
+    "id": "127211801",
+    "name": "Śluza Rędzin II",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 0.226,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": [
+      "lock"
+    ]
+  },
+  {
+    "id": "127212601",
+    "name": "Śluza Mieszczańska",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 42.8,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "lock"
+    ]
+  },
+  {
+    "id": "127336873",
+    "name": "Śluza Zacisze",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 0.187,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": [
+      "lock"
+    ]
+  },
+  {
+    "id": "127351893",
+    "name": "Śluza Piaskowa",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 39.1,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "lock",
+      "oneway"
+    ]
+  },
+  {
+    "id": "987120792",
+    "name": "Śluza Mieszczańska",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 42.8,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "lock"
+    ]
+  },
+  {
+    "id": "987120793",
+    "name": "Śluza Mieszczańska",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 42.8,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": [
+      "boat",
+      "lock"
+    ]
+  },
+  {
+    "id": "5333057",
+    "name": "Wrocław Muchobór Wielki - Sobótka, PKP",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 35.6,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "5742239",
+    "name": "Topór",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 18.0,
+    "elevation_m": 0.0,
+    "difficulty": 2,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "6467330",
+    "name": "Uraz - Kąty Wrocławskie",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 219.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "7128968",
+    "name": "Trzciana",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 9.3,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "7501880",
+    "name": "Ślęza",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 84.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "11008511",
+    "name": "Grabiszynka",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 2.01,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "riverside",
+    "tags": []
+  },
+  {
+    "id": "12592231",
+    "name": "Via Regia",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 61.0,
+    "elevation_m": 0.0,
+    "difficulty": 3,
+    "terrain_type": "mixed",
+    "tags": [
+      "pilgrimage"
+    ]
+  },
+  {
+    "id": "18747665",
+    "name": "Ścieżka historyczno-przyrodnicza wokół Maślic",
+    "region": "Wrocław",
+    "coordinates": null,
+    "length_km": 7.0,
+    "elevation_m": 0.0,
+    "difficulty": 1,
+    "terrain_type": "historical",
+    "tags": [
+      "educational",
+      "historic",
+      "roundtrip"
+    ]
+  }
+]

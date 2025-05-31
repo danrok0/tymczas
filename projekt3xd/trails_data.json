@@ -1,0 +1,256 @@
+[
+  {
+    "id": "2214056",
+    "name": "Szlak Źródła Marii",
+    "region": "Gdańsk",
+    "length_km": 0.0105,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2246133",
+    "name": "Szlak Trójmiejski",
+    "region": "Gdańsk",
+    "length_km": 0.046200000000000005,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2255855",
+    "name": "Szlak Motławski",
+    "region": "Gdańsk",
+    "length_km": 0.0358,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2396873",
+    "name": "Szlak Kartuski",
+    "region": "Gdańsk",
+    "length_km": 0.067,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2396874",
+    "name": "Szlak Wzgórz Szymbarskich",
+    "region": "Gdańsk",
+    "length_km": 0.126,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2909638",
+    "name": "Szlak Skarszewski",
+    "region": "Gdańsk",
+    "length_km": 0.0803,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "2989160",
+    "name": "Szlak Fortyfikacji Nadmorskich",
+    "region": "Gdańsk",
+    "length_km": 0.008,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "3011407",
+    "name": "Szlak Wyspy Sobieszewskiej",
+    "region": "Gdańsk",
+    "length_km": 0.01,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "13262625",
+    "name": "Szlak Ósmego Widoku",
+    "region": "Gdańsk",
+    "length_km": 0.0023,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "14036389",
+    "name": "Łącznik fioletowy TPK",
+    "region": "Gdańsk",
+    "length_km": 0.0021000000000000003,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "14036457",
+    "name": "Łącznik fioletowy TPK",
+    "region": "Gdańsk",
+    "length_km": 0.006,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "14036469",
+    "name": "Łącznik Fioletowy TPK",
+    "region": "Gdańsk",
+    "length_km": 0.0008,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "120876",
+    "name": "Południowy Szlak Krawędziowy",
+    "region": "Warszawa",
+    "length_km": 0.0498,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "338145",
+    "name": "Kabaty - Powsin",
+    "region": "Warszawa",
+    "length_km": 0.0277,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1339029",
+    "name": "Bielańskim szlakiem",
+    "region": "Warszawa",
+    "length_km": 0.013900000000000001,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1341871",
+    "name": "Szlak Przechadzkowy",
+    "region": "Warszawa",
+    "length_km": 0.0073,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1396129",
+    "name": "Warszawa Dawidy - Cieszyca",
+    "region": "Warszawa",
+    "length_km": 0.016399999999999998,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1411807",
+    "name": "Łącznik józefowski",
+    "region": "Warszawa",
+    "length_km": 0.0095,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "11957571",
+    "name": "Marysin Wawerski - Sulejówek PKP",
+    "region": "Warszawa",
+    "length_km": 0.0123,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "12295954",
+    "name": "Zalesie Górne, PKP - Kabaty",
+    "region": "Warszawa",
+    "length_km": 0.0281,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "12296156",
+    "name": "Rezerwat Park Natoliński - Latoszki",
+    "region": "Warszawa",
+    "length_km": 0.0045,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "1697841",
+    "name": "Szlak Orlich Gniazd",
+    "region": "Kraków",
+    "length_km": 0.16390000000000002,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "3792707",
+    "name": "Szlak Twierdzy Kraków - pętla północna",
+    "region": "Kraków",
+    "length_km": 0.06,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "3897354",
+    "name": "Trasa Turystyczno-Kulturowa Prądnika Czerwonego",
+    "region": "Kraków",
+    "length_km": 0.0057,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "16104097",
+    "name": "Szlak Twierdzy Kraków - pętla południowa",
+    "region": "Kraków",
+    "length_km": 0.041,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "5333057",
+    "name": "Wrocław Muchobór Wielki - Sobótka, PKP",
+    "region": "Wrocław",
+    "length_km": 35.6,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "6467330",
+    "name": "Uraz - Kąty Wrocławskie",
+    "region": "Wrocław",
+    "length_km": 219.0,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": []
+  },
+  {
+    "id": "12592231",
+    "name": "Via Regia",
+    "region": "Wrocław",
+    "length_km": 0.061,
+    "difficulty": 1,
+    "terrain_type": "mixed",
+    "tags": [
+      "pilgrimage"
+    ]
+  }
+]
