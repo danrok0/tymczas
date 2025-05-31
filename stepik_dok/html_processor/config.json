@@ -1,0 +1,11 @@
+{
+  "input_dir": "html_processor/input_data",
+  "output_dir": "html_processor/output_data", 
+  "overwrite_output": false,
+  "generate_report_plot": true,
+  "analysis_options": {
+    "calculate_totals": true,
+    "group_by_category": true,
+    "include_charts": true
+  }
+}
