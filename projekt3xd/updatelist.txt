@@ -1,0 +1,109 @@
+O to wymagania dotyczące aktualizacji mojego programu. Chcę aby wszystkie rzeczy których uzywam aktualnie zostały, aby po dodaniu zmian doszło kilka nowych rzeczy które są podane poniżej ale żeby funkcje które są obecnie i  z nich korzystam zostały. 
+Uwaga: Jeśli coś już jest z tego już i działa możemy to zostawić oraz jeśłi będzie problem z recenzjami możemy je ręcznie napisać w osobnym pliku i z nich korzystać.
+A o to co mamy do zrobienia:
+Rozbudowa projektu: Zaawansowany System Rekomendacji Tras Turystycznych z Analizą Danych i Raportowaniem
+1. Wprowadzenie
+Twoim zadaniem jest rozbudowa istniejącego systemu rekomendacji tras turystycznych o zaawansowane funkcjonalności przetwarzania danych tekstowych, analizy dokumentów HTML z opisami tras oraz generowania profesjonalnych raportów PDF z wizualizacjami. System powinien integrować dane z różnych źródeł internetowych i umożliwiać kompleksową analizę informacji turystycznych.
+
+2. Nowe wymagania funkcjonalne
+2.1. Moduł przetwarzania wyrażeń regularnych
+Klasa TextProcessor
+
+Ekstrakcja informacji z opisów tras używając wyrażeń regularnych - Dorzucamy nowe pole do klasy Route.
+Wydobywanie czasów przejścia w różnych formatach (np. "2h 30min", "150 minut", "2.5 godziny")
+Identyfikacja punktów charakterystycznych na trasie (schroniska, szczyty, przełęcze)
+Rozpoznawanie ostrzeżeń i zagrożeń w opisach tras
+Standaryzacja różnych formatów zapisu współrzędnych geograficznych
+Klasa ReviewAnalyzer
+
+Należy do trasy dorzucić pole recenzji użytkowników (jako lista recenzji).
+
+Analiza sentymentu (określenie czy pozytywne czy negatywne) w recenzjach tras używając wzorców tekstowych
+Ekstrakcja ocen numerycznych z różnych formatów (gwiazdki, punkty, skale)
+Identyfikacja najczęściej wspominanych aspektów trasy (widoki, trudność, oznakowanie)
+Wydobywanie dat i sezonowości z opinii użytkowników
+2.2. Moduł przetwarzania dokumentów HTML
+Klasa HTMLRouteExtractor
+
+Parsowanie stron internetowych z opisami tras turystycznych
+Ekstrakcja strukturalnych informacji o trasach (tabele z parametrami, listy atrakcji)
+Klasa WebDataCollector
+
+Automatyczne pobieranie danych o trasach z popularnych portali turystycznych
+Obsługa różnych struktur HTML i formatów danych
+Integracja z API serwisów pogodowych i turystycznych
+Mechanizm cache'owania pobranych danych
+2.3. Moduł generowania raportów PDF
+Klasa PDFReportGenerator
+
+Tworzenie wielostronicowych raportów z rekomendacjami tras
+Generowanie tabel porównawczych z parametrami tras
+Dodawanie nagłówków, stopek i numeracji stron
+Klasa ChartGenerator
+
+Tworzenie wykresów słupkowych porównujących parametry tras
+Generowanie wykresów kołowych z rozkładem kategorii tras
+Wykresy liniowe pokazujące profile wysokościowe
+Mapy ciepła z popularnością tras w różnych miesiącach
+Wykresy radarowe oceniające trasy pod względem różnych kryteriów
+3. Szczegółowe wymagania implementacyjne
+3.1. Wymagane wzorce wyrażeń regularnych
+System powinien obsługiwać następujące wzorce:
+
+Czas przejścia: r'(\d+(?:\.\d+)?)\s*(?:h|godz|hours?)|(\d+)\s*(?:min|minut)'
+Wysokości: r'(\d{3,4})\s*m\s*n\.p\.m\.'
+Współrzędne GPS: r'([NS]?\d{1,2}[°º]\d{1,2}[\'′]\d{1,2}[\"″]?)\s*,?\s*([EW]?\d{1,3}[°º]\d{1,2}[\'′]\d{1,2}[\"″]?)'
+Oceny: r'(\d(?:\.\d)?)/5|(\d{1,2})/10|★{1,5}'
+Daty: r'(\d{1,2})[-./](\d{1,2})[-./](\d{2,4})'
+3.2. Struktura dokumentów HTML do przetwarzania
+System powinien rozpoznawać:
+
+Tabele z parametrami tras (<table class="route-params">)
+Sekcje z opisami (<div class="route-description">)
+Galerie zdjęć (<div class="gallery">)
+Mapy interaktywne (<div id="map">)
+Recenzje użytkowników (<div class="user-review">)
+3.3. Elementy raportów PDF
+Każdy raport powinien zawierać:
+
+Stronę tytułową z datą generowania i parametrami wyszukiwania
+Spis treści z linkami do sekcji
+Podsumowanie wykonawcze z najważniejszymi wnioskami
+Szczegółowe opisy rekomendowanych tras
+Wykresy porównawcze:
+Histogram długości tras
+Wykres kołowy kategorii tras
+Wykres słupkowy ocen użytkowników
+Mapa ciepła dostępności tras w poszczególnych miesiącach
+Tabelę zbiorczą wszystkich analizowanych tras
+Aneks z danymi źródłowymi
+4. Przykładowe dane wejściowe i oczekiwane rezultaty
+4.1. Przykład danych z HTML
+<div class="route-info">
+    <h2>Szlak na Rysy</h2>
+    <table class="route-params">
+        <tr><td>Długość:</td><td>18.5 km</td></tr>
+        <tr><td>Czas przejścia:</td><td>8-10 godzin</td></tr>
+        <tr><td>Przewyższenie:</td><td>1650 m</td></tr>
+    </table>
+    <div class="user-review">
+        <span class="rating">★★★★★</span>
+        <p>Wspaniałe widoki! Byłem 15.08.2023, pogoda dopisała.</p>
+    </div>
+</div>
+4.2. Przykład analizy tekstu
+Wejście: "Trasa średnio trudna, czas przejścia około 3h 45min, najlepiej iść wczesnym rankiem. Uwaga na śliskie kamienie po deszczu!"
+
+Wynik ekstrakcji:
+
+Trudność: średnia
+Czas: 225 minut
+Zalecana pora: wczesny ranek
+Ostrzeżenia: śliskie kamienie po deszczu
+4.3. Struktura generowanego raportu PDF
+Strona tytułowa: "Raport Rekomendacji Tras Turystycznych - Sierpień 2024"
+Podsumowanie: Analiza 25 tras, 8 rekomendowanych, średni komfort pogodowy 82%
+Wykres słupkowy: Rozkład długości analizowanych tras
+Top 3 rekomendacje z mapami i profilem wysokościowym
+Analiza sezonowości: Najlepsze miesiące dla każdej trasy
+Tabela porównawcza: Wszystkie parametry w jednym miejscu

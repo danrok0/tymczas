@@ -44,13 +44,13 @@ Indeks jest modyfikowany w zależności od typu terenu:
   - Temperatura obniżana o 0.6°C na każde 100m wysokości
   - Opady zwiększane o 20%
   
-## 2. System Wag i Obliczanie Wyników
+## 9. System Wag i Obliczanie Wyników (ZAKTUALIZOWANY)
 
-### 2.1 Domyślne Wagi Kryteriów i Ich Działanie
+### 9.1 Domyślne Wagi Kryteriów i Ich Działanie
 System wykorzystuje następujący rozkład wag przy ocenie tras:
 
-1. Długość trasy (30% wagi końcowej):
-   - Bazowa waga: 0.3
+1. **Długość trasy (25% wagi końcowej)** - ZAKTUALIZOWANE:
+   - Bazowa waga: 0.25 (zmieniono z 0.30)
    - Sposób obliczania:
      * Dla każdej trasy obliczana jest odległość od optymalnego zakresu (5-15 km)
      * Jeśli trasa mieści się w zakresie: 100 punktów
@@ -59,7 +59,7 @@ System wykorzystuje następujący rozkład wag przy ocenie tras:
      * Przykład: trasa 18km = 100 - (18-15)*5 = 85 punktów
    - Lokalizacja: `utils/weight_calculator.py -> calculate_length_score()`
 
-2. Trudność (25% wagi końcowej):
+2. **Trudność (25% wagi końcowej)**:
    - Bazowa waga: 0.25
    - Sposób obliczania:
      * Poziom 1 (łatwy) = 100 punktów
@@ -70,7 +70,7 @@ System wykorzystuje następujący rozkład wag przy ocenie tras:
        - Przewyższenie > 1000m: -20 punktów
    - Lokalizacja: `utils/weight_calculator.py -> calculate_difficulty_score()`
 
-3. Warunki pogodowe (25% wagi końcowej):
+3. **Warunki pogodowe (25% wagi końcowej)**:
    - Bazowa waga: 0.25
    - Wykorzystuje indeks komfortu (0-100)
    - Dodatkowe modyfikatory:
@@ -78,8 +78,8 @@ System wykorzystuje następujący rozkład wag przy ocenie tras:
      * Silny wiatr (>20 km/h): -20 punktów
    - Lokalizacja: `utils/weather_utils.py -> calculate_hiking_comfort()`
 
-4. Typ terenu (20% wagi końcowej):
-   - Bazowa waga: 0.2
+4. **Typ terenu (25% wagi końcowej)** - ZAKTUALIZOWANE:
+   - Bazowa waga: 0.25 (zmieniono z 0.20)
    - Punktacja bazowa:
      * Górski: 90 punktów
      * Leśny: 85 punktów
@@ -90,6 +90,19 @@ System wykorzystuje następujący rozkład wag przy ocenie tras:
      * Punkty widokowe: +10 punktów
      * Atrakcje turystyczne: +5 punktów każda
    - Lokalizacja: `utils/weight_calculator.py -> calculate_terrain_score()`
+
+### 9.2 🆕 NOWY System Ustawiania Wag
+**WAŻNE**: System wag został całkowicie przeprojektowany!
+
+**Stary problem**: System pytał o wagi dla każdego miasta osobno
+**Nowe rozwiązanie**: Wagi ustawiane JEDEN RAZ na początku
+
+**Nowe funkcje**:
+- Obsługa pustych wartości (ENTER = domyślne)
+- Możliwość częściowego wypełnienia
+- Automatyczna normalizacja do sumy 100%
+- Walidacja poprawności danych
+- Lepsze komunikaty użytkownika
 
 ### 2.2 Składowe Oceny Ważonej
 1. Długość (normalizowana do 0-100)
@@ -111,200 +124,474 @@ System wykorzystuje następujący rozkład wag przy ocenie tras:
    - Nadrzeczny: 75 punktów
    - Miejski: 70 punktów
 
-## 3. Kategoryzacja Tras i Algorytmy Klasyfikacji
+## 10. Kategoryzacja Tras i Algorytmy Klasyfikacji (ZAKTUALIZOWANE)
 
-### 3.1 Automatyczna Kategoryzacja Tras
-System automatycznie kategoryzuje trasy na podstawie zestawu kryteriów i wag:
+### 10.1 🆕 Automatyczna Kategoryzacja Tras
+**Lokalizacja**: `recommendation/trail_recommender.py -> _categorize_trail()`
 
-1. Trasy Rodzinne (Algorytm klasyfikacji):
-   - Podstawowe kryteria:
-     * Trudność: poziom 1 (wymagane)
-     * Długość: < 5 km (wymagane)
-     * Przewyższenie: < 200m (wymagane)
-   - Dodatkowe punkty:
-     * Znaczniki: leisure (+10), park (+10), playground (+15), family (+15)
-     * Nawierzchnia utwardzona: +10 punktów
-     * Bliskość udogodnień: +5 punktów za każde
-   - Wymagana minimalna liczba punktów: 40
-   - Lokalizacja: `utils/trail_filter.py -> classify_family_trail()`
+System automatycznie kategoryzuje trasy na podstawie inteligentnego algorytmu:
 
-2. Trasy Widokowe (Algorytm klasyfikacji):
-   - Podstawowe kryteria:
-     * Długość: < 15 km (zalecane)
-     * Minimum jeden punkt widokowy (wymagane)
-   - System punktacji:
-     * Każdy punkt widokowy: +20 punktów
-     * Znaczniki: viewpoint (+15), scenic (+15), tourism (+10), panorama (+20)
-     * Wysokość względna > 300m: +10 punktów
-     * Lokalizacja w górach: +15 punktów
-   - Wymagana minimalna liczba punktów: 50
-   - Lokalizacja: `utils/trail_filter.py -> classify_scenic_trail()`
-   
-2. Trasy Widokowe:
-   - Długość: < 15 km
-   - Znaczniki: viewpoint, scenic, tourism, panorama
-   
-3. Trasy Sportowe:
-   - Długość: 5-15 km
-   - Trudność: poziom 2
-   - Lub znaczniki: sport, aktywny, kondycyjny
-   
-4. Trasy Ekstremalne:
-   - Trudność: poziom 3 lub
-   - Długość: > 15 km lub
-   - Przewyższenie: > 800m
-   - Znaczniki: climbing, alpine, via_ferrata
+1. **Trasy Rodzinne**:
+   - **Podstawowe kryteria** (wszystkie wymagane):
+     * Trudność: poziom 1 (łatwy)
+     * Długość: < 5 km
+     * Przewyższenie: < 200m
+   - **Dodatkowe wskaźniki**:
+     * Tagi: leisure, park, playground, family
+     * Słowa kluczowe: "rodzin", "łatw", "spokojna", "dziec"
+   - **Priorytet**: Najwyższy (sprawdzane jako pierwsze)
 
-## 4. Obliczanie Czasu Przejścia
+2. **Trasy Widokowe**:
+   - **Podstawowe kryteria**:
+     * Długość: < 15 km (nie za długie)
+     * Obecność punktów widokowych
+   - **Wskaźniki**:
+     * Tagi: viewpoint, scenic, tourism, view_point, panorama
+     * Słowa kluczowe: "widok", "panoram", "scenic", "krajobraz", "punkt widokowy"
+   - **Priorytet**: Drugi (po rodzinnych)
 
-### 4.1 Parametry Bazowe
-- Bazowa prędkość marszu: 4 km/h
+3. **Trasy Ekstremalne**:
+   - **Kryteria** (jedno wystarczy):
+     * Trudność: poziom 3 (trudny)
+     * Długość: > 15 km
+     * Przewyższenie: > 800m
+   - **Wskaźniki**:
+     * Tagi: climbing, alpine, via_ferrata, extreme
+     * Słowa kluczowe: "ekstre", "trudna", "wymagając", "alpejsk"
+   - **Priorytet**: Trzeci
 
-### 4.2 Modyfikatory Prędkości
-1. Typ Terenu:
-   - Góry: -1.0 km/h
-   - Pagórki: -0.5 km/h
-   - Las: -0.2 km/h
-   - Mieszany: -0.3 km/h
-   - Miejski: 0 km/h
-   - Nadrzeczny: 0 km/h
+4. **Trasy Sportowe**:
+   - **Kryteria**:
+     * Trudność: poziom 2 AND długość 5-15 km
+     * LUB słowa kluczowe sportowe
+   - **Wskaźniki**:
+     * Słowa kluczowe: "sport", "aktyw", "kondycyj", "wysiłk"
+   - **Priorytet**: Czwarty
 
-2. Trudność:
-   - Poziom 2: -0.5 km/h
-   - Poziom 3: -1.0 km/h
+5. **Algorytm Fallback**:
+   - Jeśli trasa nie pasuje do żadnej kategorii:
+     * Długość < 5km → rodzinna
+     * Długość > 15km OR trudność 3 → ekstremalna  
+     * Trudność 2 OR długość 5-15km → sportowa
+     * W ostateczności → widokowa (najbezpieczniejsza opcja)
 
-3. Przewyższenie:
-   - > 500m: -0.5 km/h
-   - > 1000m: -1.0 km/h
+## 11. 🆕 Obliczanie Czasu Przejścia (ZAKTUALIZOWANE)
 
-### 4.3 Mnożniki Terenowe
-Alternatywnie, przy obliczaniu czasu używane są mnożniki:
-- Górski: 1.6
-- Miejski: 0.8
-- Leśny: 1.2
-- Nizinny: 1.0
-- Mieszany: 1.3
-- Nadrzeczny: 1.1
+### 11.1 Nowy Algorytm Obliczania Czasu
+**Lokalizacja**: `recommendation/trail_recommender.py -> _calculate_trail_time()`
 
-## 5. Ocena Trudności Trasy
+**Wzór**: `Czas = Długość × Mnożnik_Trudności × Mnożnik_Terenu`
 
-### 5.1 Komponenty Trudności
+### 11.2 Parametry Bazowe
+- **Bazowa jednostka**: 1 km = 1 godzina bazowego czasu
+- **Zakres wyników**: 0.1 - 20+ godzin
+- **Precyzja**: Wynik zaokrąglany do 0.1 godziny
+
+### 11.3 🆕 Mnożniki Trudności
+1. **Poziom 1 (łatwy)**: 1.0 (bez modyfikacji)
+2. **Poziom 2 (średni)**: 1.4 (+40% czasu)
+3. **Poziom 3 (trudny)**: 1.8 (+80% czasu)
+
+**Wzór**: `1.0 + (trudność - 1) × 0.4`
+
+### 11.4 🆕 Mnożniki Terenowe
+1. **Miejski**: 0.8 (najszybszy - chodniki, asfalт)
+2. **Nizinny**: 1.0 (bazowy teren)
+3. **Nadrzeczny**: 1.1 (lekko trudniejszy)
+4. **Leśny**: 1.2 (ścieżki leśne)
+5. **Mieszany**: 1.3 (różnorodny teren)
+6. **Górski**: 1.6 (najtrudniejszy - stromizny, kamienie)
+
+### 11.5 Przykłady Obliczeń
+1. **Trasa rodzinna**: 3 km, trudność 1, teren miejski
+   - Czas = 3 × 1.0 × 0.8 = **2.4 godziny**
+
+2. **Trasa sportowa**: 10 km, trudność 2, teren leśny  
+   - Czas = 10 × 1.4 × 1.2 = **16.8 godzin**
+
+3. **Trasa ekstremalna**: 20 km, trudność 3, teren górski
+   - Czas = 20 × 1.8 × 1.6 = **57.6 godzin**
+
+### 11.6 Wyświetlanie Czasu
+System pokazuje czas w formacie:
+- **Tylko godziny**: "5h" (dla 5.0h)
+- **Godziny i minuty**: "3h 30min" (dla 3.5h)
+- **Tylko minuty**: "45min" (dla 0.75h)
+
+## 12. 📚 STARE FUNKCJONALNOŚCI (ZACHOWANE)
+
+### 12.1 Ocena Trudności Trasy
 System ocenia trudność w skali 1-3 na podstawie:
 
-1. Długości:
+1. **Długości**:
    - > 20 km: poziom 3
-   - > 10 km: poziom 2
+   - > 10 km: poziom 2  
    - ≤ 10 km: poziom 1
 
-2. Przewyższenia:
+2. **Przewyższenia**:
    - > 1000m: poziom 3
    - > 500m: poziom 2
    - ≤ 500m: poziom 1
 
-3. Skali SAC:
+3. **Skali SAC**:
    - alpine: poziom 3
    - mountain: poziom 2
    - inne: poziom 1
 
-4. Powierzchni:
-   - rock/scree: poziom 3
-   - gravel/dirt: poziom 2
-   - inne: poziom 1
+### 12.2 Podstawowe Funkcje Systemu
 
-5. Nachylenia:
-   - > 15%: poziom 3
-   - > 10%: poziom 2
-   - ≤ 10%: poziom 1
+**Analiza Pogody**:
+- `WeatherUtils.is_sunny_day()` - sprawdza słoneczność
+- `WeatherUtils.is_rainy_day()` - sprawdza opady
+- `WeatherUtils.calculate_hiking_comfort()` - indeks komfortu
 
-## 6. Przewodnik po Funkcjonalnościach
+**Operacje na Danych**:
+- `TrailDataHandler.load_trails()` - wczytywanie tras
+- `ResultExporter` - eksport do CSV/JSON/TXT
+- `TrailFilter.filter_trails()` - filtrowanie tras
 
-### 6.1 Podstawowe Obliczenia
+**Rekomendacje**:
+- `TrailRecommender.recommend_trails()` - główny algorytm
+- `TrailFilter.sort_trails()` - sortowanie wyników
 
-1. Obliczanie środka trasy:
-   - Lokalizacja: `models/route.py -> Route.calculate_center()`
-   - Opis: Oblicza geograficzny środek trasy na podstawie punktów trasy
+## 2. 🆕 NOWE FUNKCJONALNOŚCI - ETAP 3
 
-2. Szacowanie czasu przejścia:
-   - Lokalizacja: `utils/time_calculator.py -> TimeCalculator.estimate_time()`
-   - Opis: Wykorzystuje system mnożników i modyfikatorów opisany w sekcji 4
+### 2.1 System Przetwarzania Tekstu (TextProcessor)
+**Lokalizacja**: `extractors/text_processor.py`
 
-3. Sprawdzanie dopasowania do preferencji:
-   - Lokalizacja: `models/user_preference.py -> UserPreference.check_match()`
-   - Opis: Porównuje parametry trasy z preferencjami użytkownika
+**Co robi**: Analizuje opisy tras i wydobywa z nich informacje używając wyrażeń regularnych.
 
-### 6.2 Analiza Pogody
+**Główne funkcje**:
+1. **Ekstrakcja czasu przejścia** (`extract_time_info()`):
+   - Rozpoznaje formaty: "2h 30min", "150 minut", "2.5 godziny"
+   - Wzorce regex: `r'(\d+(?:\.\d+)?)\s*(?:h|godz|hours?)'`, `r'(\d+)\s*(?:min|minut)'`
+   - Przykład: "Trasa zajmuje około 3h 45min" → 3.75 godziny
 
-1. Sprawdzanie czy dzień jest słoneczny:
-   - Lokalizacja: `utils/weather_utils.py -> WeatherUtils.is_sunny_day()`
-   - Opis: Sprawdza zachmurzenie i godziny słoneczne
+2. **Identyfikacja punktów charakterystycznych** (`extract_landmarks()`):
+   - Znajduje: schroniska, szczyty, przełęcze, punkty widokowe
+   - Wzorce: `r'(schronisko|szczyt|przełęcz|punkt widokowy)'`
 
-2. Sprawdzanie czy dzień jest deszczowy:
-   - Lokalizacja: `utils/weather_utils.py -> WeatherUtils.is_rainy_day()`
-   - Opis: Sprawdza poziom opadów
+3. **Rozpoznawanie ostrzeżeń** (`extract_warnings()`):
+   - Wykrywa: śliskie kamienie, trudne warunki, zagrożenia
+   - Wzorce: `r'(uwaga|ostrożnie|niebezpieczne|śliskie)'`
 
-3. Obliczanie indeksu komfortu:
-   - Lokalizacja: `utils/weather_utils.py -> WeatherUtils.calculate_hiking_comfort()`
-   - Opis: Szczegółowy algorytm opisany w sekcji 1.1
+**Jak używać**:
+```python
+processor = TextProcessor()
+time_info = processor.extract_time_info("Czas przejścia około 2h 30min")
+# Wynik: {'hours': 2, 'minutes': 30, 'total_hours': 2.5}
+```
 
-### 6.3 Ocena i Zgodność
+### 2.2 System Analizy Recenzji (ReviewAnalyzer)
+**Lokalizacja**: `analyzers/review_analyzer.py`
 
-1. Obliczanie zgodności z trasą i pogodą:
-   - Lokalizacja: `recommendation/trail_recommender.py -> TrailRecommender.calculate_match_score()`
-   - Opis: Łączy oceny trasy, pogody i preferencji użytkownika
+**Co robi**: Analizuje recenzje użytkowników i określa ich sentiment oraz wydobywa informacje.
 
-2. Aktualizacja preferencji:
-   - Lokalizacja: `models/user_preference.py -> UserPreference.update()`
-   - Opis: Aktualizuje preferencje na podstawie wyborów użytkownika
+**Główne funkcje**:
+1. **Analiza sentymentu** (`analyze_sentiment()`):
+   - Określa czy recenzja jest pozytywna, negatywna czy neutralna
+   - Słowa pozytywne: "wspaniały", "piękny", "polecam", "świetny"
+   - Słowa negatywne: "trudny", "niebezpieczny", "nie polecam", "problem"
+   - Obsługuje negację: "nie polecam" = negatywne
 
-### 6.4 Operacje na Danych
+2. **Ekstrakcja ocen** (`extract_rating()`):
+   - Rozpoznaje formaty: "4.5/5", "8/10", "★★★★★"
+   - Normalizuje do skali 1-5
 
-1. Wczytywanie tras z plików:
-   - Lokalizacja: `data_handlers/trail_data.py -> TrailDataHandler.load_trails()`
-   - Opis: Parsuje i waliduje dane tras z różnych formatów
+3. **Identyfikacja aspektów** (`extract_aspects()`):
+   - Wykrywa tematy: widoki, trudność, oznakowanie, dojazd
+   - Przykład: "Piękne widoki ale trudne oznakowanie" → ['widoki', 'oznakowanie']
 
-2. Filtrowanie tras wg kryteriów:
-   - Lokalizacja: `utils/trail_filter.py -> TrailFilter.filter_trails()`
-   - Opis: Implementuje wszystkie filtry opisane w dokumentacji
+4. **Analiza sezonowości** (`extract_season()`):
+   - Rozpoznaje: "wiosną", "latem", "jesienią", "zimą"
 
-3. Zapisywanie wyników:
-   - Lokalizacja: `utils/export_results.py -> ResultExporter`
-   - Opis: Eksportuje wyniki do formatów TXT, JSON i CSV
+**Gdzie zobaczyć wyniki**:
+- **Opcja 3** w menu głównym: "Analiza konkretnej trasy"
+- Każda recenzja pokazuje: 📊 Sentiment: 😊 Pozytywna/😞 Negatywna/😐 Neutralna
 
-### 6.5 Dane Pogodowe
+### 2.3 System Generowania Recenzji
+**Lokalizacja**: `data_handlers/trail_data.py -> _generate_sample_reviews()`
 
-1. Wczytywanie danych pogodowych:
-   - Lokalizacja: `data_handlers/weather_data.py -> WeatherDataHandler.get_weather()`
-   - Opis: Pobiera dane z API lub cache'u
+**Co robi**: Automatycznie generuje różnorodne, realistyczne recenzje dla tras.
 
-2. Łączenie danych z lokalizacjami tras:
-   - Lokalizacja: `recommendation/trail_recommender.py -> TrailRecommender.combine_trail_weather()`
-   - Opis: Przypisuje dane pogodowe do tras
+**Typy recenzji**:
+1. **Pozytywne (60% szans)**: "Fantastyczna trasa!", "Wspaniałe widoki!"
+2. **Neutralne (25% szans)**: "Trasa w porządku", "Przeciętna trasa"
+3. **Negatywne (15% szans)**: "Rozczarowanie", "Źle oznakowana"
+4. **Specyficzne dla trudności**: Różne opinie dla łatwych/trudnych tras
+5. **Specyficzne dla terenu**: Góry, las, miasto - różne komentarze
+6. **Sezonowe**: Opinie związane z porami roku
 
-3. Statystyki pogodowe:
-   - Lokalizacja: `utils/statistics.py -> WeatherStatistics`
-   - Opis: Oblicza statystyki opisane w sekcji 5
+**Przykład wygenerowanych recenzji**:
+```
+1. Fantastyczna trasa! Szlak zachwyca na każdym kroku. 5/5
+   📊 Sentiment: 😊 Pozytywna
+   ⭐ Ocena: 5.0/5
+   🔑 Aspekty: widoki
 
-### 6.6 Rekomendacje
+2. Trasa w porządku, oznakowanie mogłoby być lepsze. 3/5
+   📊 Sentiment: 😐 Neutralna
+   ⭐ Ocena: 3.0/5
+   🔑 Aspekty: oznakowanie
+```
 
-1. Generowanie rekomendacji:
-   - Lokalizacja: `recommendation/trail_recommender.py -> TrailRecommender.recommend_trails()`
-   - Opis: Główny algorytm rekomendacji opisany w sekcji 2
+### 2.4 System Raportów PDF
+**Lokalizacja**: `reporters/pdf_report_generator.py`
 
-2. Sortowanie tras:
-   - Lokalizacja: `utils/trail_filter.py -> TrailFilter.sort_trails()`
-   - Opis: Sortuje trasy według różnych kryteriów
+**Co robi**: Generuje profesjonalne raporty PDF z rekomendacjami tras.
 
-### 6.7 Interfejs Użytkownika
+**Zawartość raportu**:
+1. **Strona tytułowa**: Data, parametry wyszukiwania
+2. **Podsumowanie wykonawcze**: Najważniejsze wnioski
+3. **Szczegółowe opisy tras**: Z mapami i profilami
+4. **Wykresy porównawcze**: Długość, oceny, kategorie
+5. **Tabela zbiorcza**: Wszystkie parametry tras
+6. **Obsługa polskich znaków**: Fonty Arial, Calibri, DejaVu Sans
 
-1. Pobieranie preferencji:
-   - Lokalizacja: `ui/user_interface.py -> UserInterface.get_preferences()`
-   - Opis: Obsługuje wprowadzanie preferencji użytkownika
+**Jak używać**:
+- **Opcja 2** w menu głównym: "Rekomendacje z raportem PDF"
+- System pyta o nazwę pliku
+- Automatycznie otwiera wygenerowany PDF
 
-2. Wyświetlanie rekomendacji:
-   - Lokalizacja: `ui/user_interface.py -> UserInterface.display_recommendations()`
-   - Opis: Formatuje i wyświetla wyniki
+### 2.5 System Wykresów i Wizualizacji
+**Lokalizacja**: `reporters/chart_generator.py`
 
-3. Wizualizacje:
-   - Lokalizacja: `ui/visualizer.py -> Visualizer`
-   - Opis: Generuje wykresy i wizualizacje danych
+**Co robi**: Tworzy wykresy do raportów PDF i analizy danych.
+
+**Typy wykresów**:
+1. **Histogram długości tras**: Rozkład długości wszystkich tras
+2. **Wykres kołowy kategorii**: Podział na rodzinne/sportowe/ekstremalne
+3. **Wykres słupkowy ocen**: Rozkład ocen użytkowników
+4. **Mapa ciepła sezonowości**: Popularność tras w różnych miesiącach
+5. **Wykres radarowy**: Ocena tras pod różnymi kryteriami
+
+**Funkcje**:
+- Automatyczne kolorowanie
+- Polskie opisy i etykiety
+- Eksport do PNG dla PDF
+- Obsługa różnych rozmiarów
+
+### 2.6 System Analizy Najlepszych Okresów
+**Lokalizacja**: `main.py -> analyze_specific_trail()` (linie 550-620)
+
+**Co robi**: Analizuje dane pogodowe i określa najlepsze okresy dla wędrówek.
+
+**Algorytm oceny komfortu**:
+1. **Temperatura (50% wagi)**:
+   - Optymalna: 15-25°C = +30 punktów
+   - Dobra: 10-15°C lub 25-30°C = +20 punktów
+   - Przeciętna: 5-10°C lub 30-35°C = +10 punktów
+   - Słaba: poniżej 5°C lub powyżej 35°C = -10 punktów
+
+2. **Opady (35% wagi)**:
+   - Niskie (<30mm) = +20 punktów
+   - Średnie (30-60mm) = +10 punktów
+   - Wysokie (60-100mm) = 0 punktów
+   - Bardzo wysokie (>100mm) = -15 punktów
+
+3. **Słońce (15% wagi)**:
+   - Dużo (>7h) = +15 punktów
+   - Średnio (5-7h) = +10 punktów
+   - Mało (3-5h) = +5 punktów
+
+**Wynik**: Ranking 12 miesięcy z indeksem komfortu 0-100
+
+### 2.7 Naprawiony System Wag
+**Lokalizacja**: `utils/weight_calculator.py`
+
+**Problem**: System w kółko pytał o wagi dla każdego miasta
+**Rozwiązanie**: Wagi pobierane tylko raz na początku
+
+**Nowe funkcje**:
+1. **Obsługa pustych wartości**: ENTER = domyślne wagi
+2. **Częściowe wypełnienie**: Można podać tylko niektóre wagi
+3. **Walidacja**: Sprawdza czy suma wag nie jest zerem
+4. **Lepsze komunikaty**: Jasne informacje o procesie
+
+**Jak działa teraz**:
+```
+⚖️ === USTAWIENIE WAG KRYTERIÓW ===
+Aktualne wagi kryteriów:
+- length: 25%
+- difficulty: 25%
+- weather: 25%
+- terrain: 25%
+
+Podaj nowe wagi (0-100) lub wciśnij ENTER dla wartości domyślnych:
+Waga długości trasy: [ENTER dla domyślnej]
+✅ Użyto domyślnych wag
+```
+
+## 3. 🔧 POPRAWKI I ULEPSZENIA
+
+### 3.1 Naprawione Gwiazdki w PDF
+**Problem**: Gwiazdki (★) wyświetlały się jako prostokąty
+**Rozwiązanie**: Zastąpiono opisowym tekstem
+- `4.2/5 (Bardzo dobra)` zamiast `4.2/5 (****-)`
+- Skala: Doskonała (4.5+), Bardzo dobra (4.0+), Dobra (3.0+), Przeciętna (2.0+), Słaba (<2.0)
+
+### 3.2 Poprawione Preferencje Sezonowe
+**Problem**: `Preferencje sezonowe: {'wiosna': 1}` - pokazywało liczby
+**Rozwiązanie**: `Preferencje sezonowe: wiosna, lato` - tylko nazwy
+
+### 3.3 Naprawiona Analiza Błędów PDF
+**Problem**: `cannot access local variable 'avg_rating_str'`
+**Rozwiązanie**: Poprawione wcięcia w `analyzers/review_analyzer.py`
+
+### 3.4 Usunięte Duplikaty Tras
+**Funkcja**: `_remove_duplicates()` w `data_handlers/trail_data.py`
+**Kryteria**: Identyczna nazwa, długość i region
+**Wynik**: System loguje ile duplikatów usunął
+
+## 4. 📍 STRUKTURA MENU I OPCJE
+
+### 4.1 Menu Główne
+```
+=== 🏔️ SYSTEM REKOMENDACJI TRAS TURYSTYCZNYCH ===
+1. 🎯 Standardowe rekomendacje tras
+2. 📊 Rekomendacje z raportem PDF  
+3. 🔍 Analiza konkretnej trasy
+4. 🌐 Zbieranie danych z internetu
+5. 📈 Generowanie wykresów
+6. 🔤 Demonstracja przetwarzania tekstu
+7. 🚪 Wyjście
+```
+
+### 4.2 Szczegółowy Opis Opcji
+
+**Opcja 1: Standardowe rekomendacje**
+- Wybór miasta/miast i daty
+- Ustawienie kryteriów wyszukiwania
+- **NOWE**: Jednorazowe ustawienie wag (nie pyta dla każdego miasta)
+- Analiza najlepszych okresów z prawdziwymi danymi pogodowymi
+- Eksport do CSV/JSON/TXT
+
+**Opcja 2: Rekomendacje z PDF**
+- Wszystko jak opcja 1 + generowanie raportu PDF
+- Możliwość podania własnej nazwy pliku
+- Automatyczne otwieranie PDF po wygenerowaniu
+- **NOWE**: Poprawione gwiazdki i polskie znaki
+
+**Opcja 3: Analiza konkretnej trasy**
+- **NAJLEPSZE MIEJSCE DO ZOBACZENIA ANALIZY SENTYMENTU!**
+- Wybór konkretnej trasy z listy
+- Szczegółowa analiza każdej recenzji z emoji
+- Pełna analiza najlepszych okresów (12 miesięcy)
+- **NOWE**: Pokazuje sentiment każdej recenzji osobno
+
+**Opcja 4: Zbieranie danych z internetu**
+- Demonstracja WebDataCollector
+- Symulacja pobierania danych z portali turystycznych
+
+**Opcja 5: Generowanie wykresów**
+- Tworzenie wszystkich typów wykresów
+- Zapisywanie do plików PNG
+- **NOWE**: Używa headless matplotlib (bez Qt)
+
+**Opcja 6: Demonstracja przetwarzania tekstu**
+- Pokazuje działanie TextProcessor
+- Przykłady z updatelist.txt
+- Ekstrakcja czasu, punktów, ostrzeżeń
+
+## 5. 🗂️ STRUKTURA PLIKÓW I POŁĄCZENIA
+
+### 5.1 Główne Moduły
+```
+projekt3xd/
+├── main.py                 # Menu główne i logika aplikacji
+├── analyzers/              # Analiza tekstu i recenzji
+│   └── review_analyzer.py  # Sentiment, oceny, aspekty
+├── extractors/             # Przetwarzanie tekstu
+│   └── text_processor.py   # Regex, ekstrakcja informacji
+├── reporters/              # Generowanie raportów
+│   ├── pdf_report_generator.py  # Raporty PDF
+│   └── chart_generator.py       # Wykresy i wizualizacje
+├── utils/                  # Narzędzia pomocnicze
+│   └── weight_calculator.py     # System wag (NAPRAWIONY)
+└── data_handlers/          # Obsługa danych
+    └── trail_data.py       # Generowanie recenzji, duplikaty
+```
+
+### 5.2 Przepływ Danych
+
+**Standardowe rekomendacje**:
+1. `main.py` → pobiera kryteria od użytkownika
+2. `weight_calculator.py` → ustawia wagi JEDEN RAZ
+3. `trail_recommender.py` → filtruje trasy dla każdego miasta
+4. `review_analyzer.py` → analizuje recenzje
+5. `export_results.py` → eksportuje wyniki
+
+**Analiza konkretnej trasy**:
+1. `main.py` → wybór trasy
+2. `trail_data.py` → generuje recenzje
+3. `review_analyzer.py` → analizuje każdą recenzję
+4. `weather_utils.py` → analiza najlepszych okresów
+5. Wyświetlenie szczegółowych wyników z emoji
+
+**Raport PDF**:
+1. `main.py` → standardowe rekomendacje
+2. `chart_generator.py` → tworzy wykresy
+3. `pdf_report_generator.py` → łączy wszystko w PDF
+4. Automatyczne otwieranie pliku
+
+## 6. 🎯 JAK PRZETESTOWAĆ NOWE FUNKCJE
+
+### 6.1 Test Analizy Sentymentu
+1. Uruchom: `python main.py`
+2. Wybierz opcję **3** (Analiza konkretnej trasy)
+3. Wybierz miasto (np. Gdańsk)
+4. Wybierz trasę z listy
+5. Zobacz szczegółową analizę każdej recenzji z emoji!
+
+### 6.2 Test Naprawionego Systemu Wag
+1. Uruchom: `python main.py`
+2. Wybierz opcję **1** (Standardowe rekomendacje)
+3. Wybierz **wszystkie miasta** (ENTER)
+4. Ustaw wagi JEDEN RAZ na początku
+5. System nie będzie już pytał o wagi dla każdego miasta!
+
+### 6.3 Test Raportu PDF
+1. Uruchom: `python main.py`
+2. Wybierz opcję **2** (Rekomendacje z PDF)
+3. Podaj nazwę raportu lub ENTER
+4. Zobacz poprawnie wyświetlone oceny (bez prostokątów)
+5. Raport automatycznie się otworzy
+
+### 6.4 Test Przetwarzania Tekstu
+1. Uruchom: `python main.py`
+2. Wybierz opcję **6** (Demonstracja przetwarzania tekstu)
+3. Zobacz jak system wydobywa informacje z opisów tras
+4. Przykłady z updatelist.txt w akcji!
+
+## 7. 🔍 ROZWIĄZYWANIE PROBLEMÓW
+
+### 7.1 Częste Problemy i Rozwiązania
+
+**Problem**: "Qt error" przy wykresach
+**Rozwiązanie**: Dodano `matplotlib.use('Agg')` w chart_generator.py
+
+**Problem**: Polskie znaki w PDF
+**Rozwiązanie**: Używamy fontów Arial, Calibri, DejaVu Sans
+
+**Problem**: Nieskończona pętla wag
+**Rozwiązanie**: Naprawiono obsługę pustych wartości w weight_calculator.py
+
+**Problem**: Brak danych pogodowych
+**Rozwiązanie**: System używa weather_dataa.json z prawdziwymi danymi
+
+### 7.2 Logi i Debugowanie
+- Wszystkie błędy są logowane do konsoli
+- ReviewAnalyzer loguje statystyki analizy
+- System pokazuje postęp operacji
+- Fallback na domyślne wartości przy błędach
+
+## 8. 🚀 PRZYSZŁE ROZSZERZENIA (updatelist2.txt)
+
+System jest przygotowany na **Etap 4: Integracja z Bazą Danych**:
+- Migracja z CSV/JSON do SQLite
+- Repozytoria danych (RouteRepository, WeatherRepository)
+- Backup i restore bazy danych
+- Nowe opcje menu administracyjnego
+
+Wszystkie obecne funkcjonalności będą zachowane i rozszerzone o obsługę bazy danych.
 

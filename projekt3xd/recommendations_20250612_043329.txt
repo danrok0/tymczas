@@ -1,0 +1,3987 @@
+=== Rekomendacje szlaków na dzień 2025-06-12 ===
+Data wygenerowania: 2025-06-12 04:33:29
+
+=== Gdańsk ===
+
+Dane pogodowe:
+Temperatura: 11.7°C - 17.1°C
+Średnia temperatura: 14.4°C
+Opady: 0.0 mm
+Zachmurzenie: 20%
+Godziny słoneczne: 15.352194444444445 h
+Prędkość wiatru: 17.9 km/h
+
+
+Znaleziono 397 tras:
+
+1. Bazylika Konkatedralna Wniebowzięcia Najświętszej Maryi Panny
+   Miasto: Gdańsk
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.7/100
+   Szacowany czas przejścia: 1h 13min
+
+2. Dom Wędkarza
+   Miasto: Gdańsk
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.7/100
+   Szacowany czas przejścia: 1h 13min
+
+3. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.7/100
+   Szacowany czas przejścia: 1h 13min
+
+4. Schron dowodzenia baterii wydmowej 1911
+   Miasto: Gdańsk
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.7/100
+   Szacowany czas przejścia: 1h 13min
+
+5. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.7/100
+   Szacowany czas przejścia: 1h 13min
+
+6. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.7/100
+   Szacowany czas przejścia: 1h 13min
+
+7. Opływ Motławy
+   Miasto: Gdańsk
+   Długość: 4.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.7/100
+   Szacowany czas przejścia: 1h 13min
+
+8. Bazylika Świętej Brygidy
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+9. Ojcowska
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+10. Potok Jasień
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+11. Strzelniczka
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+12. Migowska Bielawa
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+13. Nowa Motława
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+14. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+15. Potok Szadólski
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+16. Kanał Rudnicki
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+17. Dyrekcja Kolei w Gdańsku
+   Miasto: Gdańsk
+   Długość: 4.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.4/100
+   Szacowany czas przejścia: 1h 11min
+
+18. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+19. Cegielniana Struga
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+20. Brama Żuławska
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+21. Warzywód II
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+22. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+23. Kanał Młynówka
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+24. Rezerwat Źródliska w dolinie Ewy
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+25. Stara Motława
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+26. Warzywód
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+27. poligon treningowy dla psów ratowniczych
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+28. Park Diany
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+29. Potok Matarnicki
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+30. Potok Czystej Wody
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+31. Czarna Łacha
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+32. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+33. Strzyża
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+34. Potok Siedlecki
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+35. Bastion Piaskowy
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+36. Martwa Wisła
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+37. Pomnik Poległych Stoczniowców w Gdańsku
+   Miasto: Gdańsk
+   Długość: 4.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 74.1/100
+   Szacowany czas przejścia: 1h 10min
+
+38. Brama Żuraw
+   Miasto: Gdańsk
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.8/100
+   Szacowany czas przejścia: 1h 8min
+
+39. Baszta Łabędź
+   Miasto: Gdańsk
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.8/100
+   Szacowany czas przejścia: 1h 8min
+
+40. Nowa Motława
+   Miasto: Gdańsk
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.8/100
+   Szacowany czas przejścia: 1h 8min
+
+41. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.8/100
+   Szacowany czas przejścia: 1h 8min
+
+42. Potok Siedlicki
+   Miasto: Gdańsk
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.8/100
+   Szacowany czas przejścia: 1h 8min
+
+43. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.8/100
+   Szacowany czas przejścia: 1h 8min
+
+44. Czarna Łacha
+   Miasto: Gdańsk
+   Długość: 4.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.8/100
+   Szacowany czas przejścia: 1h 8min
+
+45. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 7min
+
+46. Kanał Młynówka
+   Miasto: Gdańsk
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 7min
+
+47. Bastion Królik
+   Miasto: Gdańsk
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 7min
+
+48. Katownia
+   Miasto: Gdańsk
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 7min
+
+49. Łozy w Kiełpinie
+   Miasto: Gdańsk
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 7min
+
+50. Potok Czystej Wody
+   Miasto: Gdańsk
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 7min
+
+51. Potok Zajączkowski
+   Miasto: Gdańsk
+   Długość: 4.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.5/100
+   Szacowany czas przejścia: 1h 7min
+
+52. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+53. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+54. Strzelniczka
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+55. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+56. Park Schopenhauera
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+57. Ogrody Doraco
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+58. Roślinność łąkowa
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+59. Potok Czystej Wody
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+60. Bastion Jerozolimski
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+61. Bastion Neubauer'a
+   Miasto: Gdańsk
+   Długość: 4.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 73.2/100
+   Szacowany czas przejścia: 1h 6min
+
+62. Park Chirona
+   Miasto: Gdańsk
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.9/100
+   Szacowany czas przejścia: 1h 4min
+
+63. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.9/100
+   Szacowany czas przejścia: 1h 4min
+
+64. Kanał Młynówka
+   Miasto: Gdańsk
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.9/100
+   Szacowany czas przejścia: 1h 4min
+
+65. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.9/100
+   Szacowany czas przejścia: 1h 4min
+
+66. Poterna - część górna
+   Miasto: Gdańsk
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.9/100
+   Szacowany czas przejścia: 1h 4min
+
+67. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.9/100
+   Szacowany czas przejścia: 1h 4min
+
+68. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.9/100
+   Szacowany czas przejścia: 1h 4min
+
+69. Nowa Motława
+   Miasto: Gdańsk
+   Długość: 4.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.9/100
+   Szacowany czas przejścia: 1h 4min
+
+70. Bastion św. Elżbiety
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+71. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+72. Kanał Młynówka
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+73. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+74. Potok Strzyża
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+75. Bastion Miś
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+76. Potok Święty Wojciech
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+77. Potok Smęgorzyński
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+78. Strzyża
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+79. Zielony Staw
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+80. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+81. Skwer przy ul. Kaszubskiej
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+82. Potok Kowalski
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+83. Park Brzeźnieński im. J. J. Haffnera
+   Miasto: Gdańsk
+   Długość: 4.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.6/100
+   Szacowany czas przejścia: 1h 3min
+
+84. Dolina Reinkego (Źródlana)
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+85. Dwór Zakoniczyn
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+86. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+87. Młyn IX
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+88. Strzyża
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+89. Kamienny krąg
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+90. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+91. Kanał Rudnicki
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+92. Szlak Batorego
+   Miasto: Gdańsk
+   Długość: 4.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.3/100
+   Szacowany czas przejścia: 1h 1min
+
+93. Kościół pw. Świętego Józefa
+   Miasto: Gdańsk
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+94. Park im. ks. Bronisława Kabata
+   Miasto: Gdańsk
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+95. Warzywód II
+   Miasto: Gdańsk
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+96. Potok Szadułski
+   Miasto: Gdańsk
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+97. Stanowisko obserwacyjne "Kosmonautów"
+   Miasto: Gdańsk
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+98. Pozostałości muru zamku krzyżackiego
+   Miasto: Gdańsk
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+99. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+100. Strzyża
+   Miasto: Gdańsk
+   Długość: 4.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 72.0/100
+   Szacowany czas przejścia: 1h
+
+101. Martwa Wisła
+   Miasto: Gdańsk
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.7/100
+   Szacowany czas przejścia: 58min
+
+102. Kościół pw. Świętej Katarzyny
+   Miasto: Gdańsk
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.7/100
+   Szacowany czas przejścia: 58min
+
+103. Polana Augusty
+   Miasto: Gdańsk
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.7/100
+   Szacowany czas przejścia: 58min
+
+104. Stara Motława
+   Miasto: Gdańsk
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.7/100
+   Szacowany czas przejścia: 58min
+
+105. Park Ferberów
+   Miasto: Gdańsk
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.7/100
+   Szacowany czas przejścia: 58min
+
+106. Potok Prochowy
+   Miasto: Gdańsk
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.7/100
+   Szacowany czas przejścia: 58min
+
+107. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 3.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.7/100
+   Szacowany czas przejścia: 58min
+
+108. Twierdza Wisłoujście
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+109. Baszta Jacek
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+110. Park Oruński im. Emilii Hoene
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+111. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+112. Magazyn Amunicyjny
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+113. Salwinia w Owczarni
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+114. Strzyża
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+115. Park Dworu II
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+116. Potok Prochowy
+   Miasto: Gdańsk
+   Długość: 3.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.4/100
+   Szacowany czas przejścia: 57min
+
+117. Dom Opatów Pelplińskich
+   Miasto: Gdańsk
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.1/100
+   Szacowany czas przejścia: 55min
+
+118. Skwer Marszałka Józefa Piłsudskiego
+   Miasto: Gdańsk
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.1/100
+   Szacowany czas przejścia: 55min
+
+119. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.1/100
+   Szacowany czas przejścia: 55min
+
+120. Strzelniczka
+   Miasto: Gdańsk
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.1/100
+   Szacowany czas przejścia: 55min
+
+121. Jasień
+   Miasto: Gdańsk
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.1/100
+   Szacowany czas przejścia: 55min
+
+122. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.1/100
+   Szacowany czas przejścia: 55min
+
+123. Roślinność leśna
+   Miasto: Gdańsk
+   Długość: 3.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 71.1/100
+   Szacowany czas przejścia: 55min
+
+124. Spichlerz Klasztorny
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+125. Park im. Józefa Wybickiego
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+126. Mała Zbrojownia
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+127. Strzyża
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+128. Potok Bernarda
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+129. Bastion św. Elżbiety
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+130. Pomnik Kindertransportów
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+131. Stara Motława
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+132. Kaplica Matki Bożej Brzemiennej w Gdańsku Matemblewie
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+133. Wysokie Czoło Kurkowe
+   Miasto: Gdańsk
+   Długość: 3.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.8/100
+   Szacowany czas przejścia: 54min
+
+134. Brama Wyżynna
+   Miasto: Gdańsk
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 52min
+
+135. Skwer im. Polskich Harcerzy w byłym Wolnym Mieście Gdańsku
+   Miasto: Gdańsk
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 52min
+
+136. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 52min
+
+137. Stacja kolejowa
+   Miasto: Gdańsk
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 52min
+
+138. Potok Święty Wojciech
+   Miasto: Gdańsk
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 52min
+
+139. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 3.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.5/100
+   Szacowany czas przejścia: 52min
+
+140. Kościół pw. Świętej Elżbiety
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+141. Kościół pw. Świętej Barbary
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+142. Kanał D
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+143. Rezerwat Dolina Strzyży
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+144. Strzyża
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+145. Bazylika Świętego Mikołaja
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+146. Jasień
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+147. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+148. Fort Góry Gradowej
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+149. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 3.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 70.2/100
+   Szacowany czas przejścia: 51min
+
+150. Zbrojownia
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+151. Potok Zajączkowski
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+152. Baszta Słomiana
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+153. Strzelniczka
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+154. Kanał A
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+155. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+156. Gdański Ogród Zoologiczny
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+157. Skwer Bajki
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+158. Potok Czystej Wody
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+159. Lasy Oliwskie
+   Miasto: Gdańsk
+   Długość: 3.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.9/100
+   Szacowany czas przejścia: 49min
+
+160. Park Akademicki
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+161. Radunia
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+162. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+163. Śluza Kamienna
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+164. Ogród Roślin Leczniczych
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+165. Zielone Wyspy
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+166. Ogród na Ołowiance
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+167. Park Okazała Strzyża
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+168. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+169. Strzyża
+   Miasto: Gdańsk
+   Długość: 3.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.6/100
+   Szacowany czas przejścia: 48min
+
+170. Park Salwator
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+171. Kiełpińska Struga
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+172. Strzyża
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+173. Potok Bernarda
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+174. Gardziel
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+175. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+176. Zieleniec Parterowa
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+177. Tajemniczy Ogród
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+178. Potok Smęgorzyński
+   Miasto: Gdańsk
+   Długość: 3.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.3/100
+   Szacowany czas przejścia: 46min
+
+179. Bastion Żubr
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+180. Park imienia Ronalda Reagana
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+181. Potok Kowalski
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+182. Mała Zbrojownia
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+183. Schron 25 BAS
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+184. Park Opacka
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+185. Skwer gen. Marka Bezruczki
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+186. Potok Jasień
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+187. Bastion Ostroróg
+   Miasto: Gdańsk
+   Długość: 3.0 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 69.0/100
+   Szacowany czas przejścia: 45min
+
+188. Radunia
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+189. Park Uphagena
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+190. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+191. Kościół pw. Świętego Jakuba
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+192. Targ Drzewny
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+193. Potok Smęgorzyński
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+194. Kanał Portowy
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+195. Potok Święty Wojciech
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+196. Nabrzeże Zbożowe
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+197. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+198. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 2.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.7/100
+   Szacowany czas przejścia: 43min
+
+199. Nowy Ratusz
+   Miasto: Gdańsk
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.4/100
+   Szacowany czas przejścia: 42min
+
+200. Bastion Wyskok
+   Miasto: Gdańsk
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.4/100
+   Szacowany czas przejścia: 42min
+
+201. Skwer im. Ireny Jarockiej
+   Miasto: Gdańsk
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.4/100
+   Szacowany czas przejścia: 42min
+
+202. Potok Zajączkowski
+   Miasto: Gdańsk
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.4/100
+   Szacowany czas przejścia: 42min
+
+203. Strzyża
+   Miasto: Gdańsk
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.4/100
+   Szacowany czas przejścia: 42min
+
+204. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.4/100
+   Szacowany czas przejścia: 42min
+
+205. Potok Czystej Wody
+   Miasto: Gdańsk
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.4/100
+   Szacowany czas przejścia: 42min
+
+206. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 2.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.4/100
+   Szacowany czas przejścia: 42min
+
+207. Nowy Port
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+208. Brama Nizinna
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+209. Plac Dariusza Kobzdeja
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+210. Strzelniczka
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+211. Rezerwat Wąwóz Huzarów
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+212. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+213. Skwer przy ul. Drzymały
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+214. Potok Siedlicki
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+215. Źródliska w Dolinie Ewy
+   Miasto: Gdańsk
+   Długość: 2.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 68.1/100
+   Szacowany czas przejścia: 40min
+
+216. Skwer im. Anny Walentynowicz
+   Miasto: Gdańsk
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.8/100
+   Szacowany czas przejścia: 39min
+
+217. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.8/100
+   Szacowany czas przejścia: 39min
+
+218. Baszta Mała Stągiewna
+   Miasto: Gdańsk
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.8/100
+   Szacowany czas przejścia: 39min
+
+219. Potok Strzyża
+   Miasto: Gdańsk
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.8/100
+   Szacowany czas przejścia: 39min
+
+220. Silnik główny ze statku m.s. "Romuald Traugutt"
+   Miasto: Gdańsk
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.8/100
+   Szacowany czas przejścia: 39min
+
+221. Strzyża
+   Miasto: Gdańsk
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.8/100
+   Szacowany czas przejścia: 39min
+
+222. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.8/100
+   Szacowany czas przejścia: 39min
+
+223. Most Rogoźników
+   Miasto: Gdańsk
+   Długość: 2.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.8/100
+   Szacowany czas przejścia: 39min
+
+224. Park im. Daniela Gralatha
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+225. Ratusz Starego Miasta
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+226. Kiełpińska Struga
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+227. Dawne Schody Hańby
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+228. Strzyża
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+229. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+230. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+231. Potok Prochowy
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+232. Park linowy "Małpi Jar"
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+233. Baszta Narożna
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+234. Skwer Bohaterskiego Mariupola
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+235. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+236. Park przy osiedlu Biotura
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+237. Kanał Młynówka
+   Miasto: Gdańsk
+   Długość: 2.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.5/100
+   Szacowany czas przejścia: 37min
+
+238. Bastion Wilk
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+239. Bazylika Archikatedralna Trójcy Świętej
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+240. Potok Smęgorzyński
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+241. Strzelniczka
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+242. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+243. Pole Gwiazd
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+244. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+245. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+246. Roslinność stepowa
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+247. Wysokie Skrzydło Kurkowe
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+248. Kanał Młynówka
+   Miasto: Gdańsk
+   Długość: 2.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 67.2/100
+   Szacowany czas przejścia: 36min
+
+249. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+250. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+251. Bastion św. Gertrudy
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+252. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+253. Fontanna Neptuna
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+254. Magazyn Amunicyjny
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+255. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+256. Luneta Cafarellego
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+257. Potok Zajączkowski
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+258. Park "Belgradzka"
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+259. Szlak Ósmego Widoku
+   Miasto: Gdańsk
+   Długość: 2.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.9/100
+   Szacowany czas przejścia: 34min
+
+260. Dworzec PKP Gdańsk Główny
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+261. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+262. Kaplica Królewska
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+263. Potok Bernarda
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+264. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+265. Zbiornik Wody "Kazimierz"
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+266. Prochownia pod Kasztanami
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+267. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+268. Alpinarium
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+269. Strzyża
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+270. Potok Czystej Wody
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+271. Roślinność wysokogórska
+   Miasto: Gdańsk
+   Długość: 2.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.6/100
+   Szacowany czas przejścia: 33min
+
+272. Twierdza Wisłoujście
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+273. Kanał Rudnicki
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+274. Strzyża
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+275. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+276. Potok Rynarzewski
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+277. Kalwaria
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+278. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+279. Bastion Zbawiciel
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+280. Rozwójka
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+281. Łącznik fioletowy TPK
+   Miasto: Gdańsk
+   Długość: 2.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.3/100
+   Szacowany czas przejścia: 31min
+
+282. Strzyża
+   Miasto: Gdańsk
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 30min
+
+283. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 30min
+
+284. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 30min
+
+285. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 30min
+
+286. Hauward - plac szkoleniowy dla psów
+   Miasto: Gdańsk
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 30min
+
+287. Warzywód
+   Miasto: Gdańsk
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 30min
+
+288. Nabrzeże Zbożowe
+   Miasto: Gdańsk
+   Długość: 2.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 66.0/100
+   Szacowany czas przejścia: 30min
+
+289. Park na Wroniej Górce
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+290. Sień Gdańska
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+291. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+292. Park Przymorze
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+293. Strzyża
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+294. Złota Brama
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+295. Skwer prof. Pawła Gałuszki
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+296. Kanał Młynówka
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+297. Ogród japoński
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+298. Jaśkowy Zakątek
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+299. Pozostałości muru zamku krzyżackiego
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+300. Strzelniczka
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+301. Potok Siedlicki
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+302. Migowska Struga
+   Miasto: Gdańsk
+   Długość: 1.9 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.7/100
+   Szacowany czas przejścia: 28min
+
+303. Park poforteczny „Grodzisko”
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+304. Warzywód II
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+305. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+306. Migowska Struga
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+307. Potok Bernarda
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+308. Motława
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+309. Ruiny dawnej wieży widokowej
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+310. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+311. Roślinność ruderalna
+   Miasto: Gdańsk
+   Długość: 1.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.4/100
+   Szacowany czas przejścia: 27min
+
+312. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.1/100
+   Szacowany czas przejścia: 25min
+
+313. Skwer Czesława Niemena
+   Miasto: Gdańsk
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.1/100
+   Szacowany czas przejścia: 25min
+
+314. Strzyża
+   Miasto: Gdańsk
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.1/100
+   Szacowany czas przejścia: 25min
+
+315. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.1/100
+   Szacowany czas przejścia: 25min
+
+316. Cegielniana Struga
+   Miasto: Gdańsk
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.1/100
+   Szacowany czas przejścia: 25min
+
+317. Potok Siedlicki
+   Miasto: Gdańsk
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.1/100
+   Szacowany czas przejścia: 25min
+
+318. Ogród Biblijny
+   Miasto: Gdańsk
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.1/100
+   Szacowany czas przejścia: 25min
+
+319. Bastion Pośredni
+   Miasto: Gdańsk
+   Długość: 1.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 65.1/100
+   Szacowany czas przejścia: 25min
+
+320. Wielki Młyn
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+321. Złota Kamienica
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+322. Potok Maćkowy
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+323. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+324. Strzyża
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+325. Kanał Młynówka
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+326. Park księdza kanonika Kazimierza Orkusza
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+327. Baszta Browarna
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+328. Potok Czystej Wody
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+329. Skwer Kwitnących Wiśni
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+330. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+331. Redita Napoleońska
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+332. Potok Siedlicki
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+333. Potok Jasień
+   Miasto: Gdańsk
+   Długość: 1.6 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.8/100
+   Szacowany czas przejścia: 24min
+
+334. Park Jelitkowski
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+335. Mleczny Piotr
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+336. Strzelniczka
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+337. Park XXV-lecia Polski Rzeczypospolitej Ludowej
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+338. Molo w Brzeźnie
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+339. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+340. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+341. Potok Prochowy
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+342. Poterna - część dolna
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+343. Bastion Vigilance
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+344. Rozwójka
+   Miasto: Gdańsk
+   Długość: 1.5 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.5/100
+   Szacowany czas przejścia: 22min
+
+345. Kanał na Stępce
+   Miasto: Gdańsk
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.2/100
+   Szacowany czas przejścia: 21min
+
+346. Kanał Raduni
+   Miasto: Gdańsk
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.2/100
+   Szacowany czas przejścia: 21min
+
+347. Potok Oruński
+   Miasto: Gdańsk
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.2/100
+   Szacowany czas przejścia: 21min
+
+348. Wartownia nr 5
+   Miasto: Gdańsk
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.2/100
+   Szacowany czas przejścia: 21min
+
+349. Młyn Prochowy
+   Miasto: Gdańsk
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.2/100
+   Szacowany czas przejścia: 21min
+
+350. Roślinność zaroślowa
+   Miasto: Gdańsk
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.2/100
+   Szacowany czas przejścia: 21min
+
+351. Opływ Motławy
+   Miasto: Gdańsk
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.2/100
+   Szacowany czas przejścia: 21min
+
+352. Źródliska Potoku Oliwskiego
+   Miasto: Gdańsk
+   Długość: 1.4 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 64.2/100
+   Szacowany czas przejścia: 21min
+
+353. Park Millenium
+   Miasto: Gdańsk
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.9/100
+   Szacowany czas przejścia: 19min
+
+354. Park Generała Józefa Bema
+   Miasto: Gdańsk
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.9/100
+   Szacowany czas przejścia: 19min
+
+355. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.9/100
+   Szacowany czas przejścia: 19min
+
+356. Kościół pw. Świętego Jana
+   Miasto: Gdańsk
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.9/100
+   Szacowany czas przejścia: 19min
+
+357. Park im. Jana Pawła II
+   Miasto: Gdańsk
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.9/100
+   Szacowany czas przejścia: 19min
+
+358. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.9/100
+   Szacowany czas przejścia: 19min
+
+359. Luneta Senarmont'a
+   Miasto: Gdańsk
+   Długość: 1.3 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.9/100
+   Szacowany czas przejścia: 19min
+
+360. Park Jordanowski
+   Miasto: Gdańsk
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.6/100
+   Szacowany czas przejścia: 18min
+
+361. Nabrzeże Oliwskie
+   Miasto: Gdańsk
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.6/100
+   Szacowany czas przejścia: 18min
+
+362. Potok Jasień
+   Miasto: Gdańsk
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.6/100
+   Szacowany czas przejścia: 18min
+
+363. Plaża Stogi
+   Miasto: Gdańsk
+   Długość: 1.2 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.6/100
+   Szacowany czas przejścia: 18min
+
+364. Motława
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+365. Potok Jasień
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+366. Potok Królewski
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+367. Potok Czystej Wody
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+368. Sanktuarium Matki Bożej Brzemiennej w Gdańsku Matemblewie
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+369. Potok Oliwski
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+370. Strzyża
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+371. Skwer Joachima Gudela
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+372. Potok Matarnicki
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+373. Przekop Wisły
+   Miasto: Gdańsk
+   Długość: 1.1 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.3/100
+   Szacowany czas przejścia: 16min
+
+374. Wisła
+   Miasto: Gdańsk
+   Długość: 1.047 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.14/100
+   Szacowany czas przejścia: 15min
+
+375. Park Westerplatte
+   Miasto: Gdańsk
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.0/100
+   Szacowany czas przejścia: 15min
+
+376. Zbiornik wody "Wysoki Dwór"
+   Miasto: Gdańsk
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.0/100
+   Szacowany czas przejścia: 15min
+
+377. Potok Jaśkowy
+   Miasto: Gdańsk
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.0/100
+   Szacowany czas przejścia: 15min
+
+378. Stanowisko obserwacyjne "Szybowcowa"
+   Miasto: Gdańsk
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.0/100
+   Szacowany czas przejścia: 15min
+
+379. Potok Siedlecki
+   Miasto: Gdańsk
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: riverside
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.0/100
+   Szacowany czas przejścia: 15min
+
+380. Park im. Steffensów
+   Miasto: Gdańsk
+   Długość: 1.0 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 63.0/100
+   Szacowany czas przejścia: 15min
+
+381. Baszta Kotwiczników
+   Miasto: Gdańsk
+   Długość: 0.9 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.7/100
+   Szacowany czas przejścia: 13min
+
+382. Park im. Św. Barbary
+   Miasto: Gdańsk
+   Długość: 0.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.7/100
+   Szacowany czas przejścia: 13min
+
+383. Skwer Lucyny Legut
+   Miasto: Gdańsk
+   Długość: 0.9 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.7/100
+   Szacowany czas przejścia: 13min
+
+384. Park nad Strzyżą
+   Miasto: Gdańsk
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.4/100
+   Szacowany czas przejścia: 12min
+
+385. Skwer im. Ignacego Wilczewskiego
+   Miasto: Gdańsk
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.4/100
+   Szacowany czas przejścia: 12min
+
+386. Wieża Więzienna
+   Miasto: Gdańsk
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.4/100
+   Szacowany czas przejścia: 12min
+
+387. Park Dragana
+   Miasto: Gdańsk
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.4/100
+   Szacowany czas przejścia: 12min
+
+388. Schron stanowiska dowodzenia
+   Miasto: Gdańsk
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.4/100
+   Szacowany czas przejścia: 12min
+
+389. Łącznik Fioletowy TPK
+   Miasto: Gdańsk
+   Długość: 0.8 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.4/100
+   Szacowany czas przejścia: 12min
+
+390. Skwer im. Krzysztofa Kolbergera
+   Miasto: Gdańsk
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.1/100
+   Szacowany czas przejścia: 10min
+
+391. Niskie Czoło Kurkowe
+   Miasto: Gdańsk
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.1/100
+   Szacowany czas przejścia: 10min
+
+392. Stanowisko obserwacyjne "Bysewo"
+   Miasto: Gdańsk
+   Długość: 0.7 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 62.1/100
+   Szacowany czas przejścia: 10min
+
+393. Dwór Bractwa św. Jerzego
+   Miasto: Gdańsk
+   Długość: 0.5 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 61.5/100
+   Szacowany czas przejścia: 7min
+
+394. AmberSky Gdańsk - Koło Widokowe
+   Miasto: Gdańsk
+   Długość: 0.5 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 61.5/100
+   Szacowany czas przejścia: 7min
+
+395. Baszta Wielka Stągiewna
+   Miasto: Gdańsk
+   Długość: 0.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 61.2/100
+   Szacowany czas przejścia: 6min
+
+396. Luneta Delzous
+   Miasto: Gdańsk
+   Długość: 0.4 km
+   Poziom trudności: 1/3
+   Typ terenu: historical
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 61.2/100
+   Szacowany czas przejścia: 6min
+
+397. Szlak Wzgórz Szymbarskich
+   Miasto: Gdańsk
+   Długość: 0.126 km
+   Poziom trudności: 1/3
+   Typ terenu: mixed
+   Kategoria: RODZINNA
+   Indeks komfortu: 96.4/100
+   Wynik ważony: 60.38/100
+   Szacowany czas przejścia: 1min
+
+==================================================

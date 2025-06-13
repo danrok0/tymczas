@@ -41,20 +41,44 @@ class WeightCalculator:
         for criterion, weight in self.weights.items():
             print(f"- {criterion}: {weight*100:.0f}%")
 
+        print("\nPodaj nowe wagi (0-100) lub wciśnij ENTER dla wartości domyślnych:")
+        
         try:
-            print("\nPodaj nowe wagi (0-100) lub wciśnij ENTER dla wartości domyślnych:")
-            self.weights['length'] = float(input("Waga długości trasy: ")) / 100
-            self.weights['difficulty'] = float(input("Waga trudności: ")) / 100
-            self.weights['weather'] = float(input("Waga warunków pogodowych: ")) / 100
-            self.weights['terrain'] = float(input("Waga typu terenu: ")) / 100
+            # Pobierz wagi z obsługą pustych wartości
+            length_input = input("Waga długości trasy: ").strip()
+            difficulty_input = input("Waga trudności: ").strip()
+            weather_input = input("Waga warunków pogodowych: ").strip()
+            terrain_input = input("Waga typu terenu: ").strip()
+            
+            # Sprawdź czy wszystkie są puste (użytkownik chce domyślne)
+            if not any([length_input, difficulty_input, weather_input, terrain_input]):
+                print("✅ Użyto domyślnych wag")
+                self.weights = self.default_weights.copy()
+                return self.weights
+            
+            # Konwertuj niepuste wartości, użyj domyślnych dla pustych
+            if length_input:
+                self.weights['length'] = float(length_input) / 100
+            if difficulty_input:
+                self.weights['difficulty'] = float(difficulty_input) / 100
+            if weather_input:
+                self.weights['weather'] = float(weather_input) / 100
+            if terrain_input:
+                self.weights['terrain'] = float(terrain_input) / 100
 
             # Normalizacja wag
             total = sum(self.weights.values())
-            for key in self.weights:
-                self.weights[key] /= total
+            if total > 0:
+                for key in self.weights:
+                    self.weights[key] /= total
+                print("✅ Wagi zostały znormalizowane")
+            else:
+                print("❌ Suma wag nie może być zero. Użyto domyślnych wag.")
+                self.weights = self.default_weights.copy()
 
-        except ValueError:
-            print("Użyto domyślnych wag")
+        except ValueError as e:
+            print(f"❌ Błąd w podanych wartościach: {e}")
+            print("✅ Użyto domyślnych wag")
             self.weights = self.default_weights.copy()
 
         return self.weights

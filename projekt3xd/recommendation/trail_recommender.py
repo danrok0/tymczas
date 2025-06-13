@@ -13,11 +13,29 @@ from utils.weather_utils import WeatherUtils
 from utils.weight_calculator import WeightCalculator
 from utils.time_calculator import TimeCalculator
 
+try:
+    from reporters.pdf_report_generator import PDFReportGenerator
+except ImportError:
+    print("Ostrzeżenie: Nie można zaimportować PDFReportGenerator")
+    PDFReportGenerator = None
+
 class TrailRecommender:
     def __init__(self):
         """Inicjalizuje obiekt TrailRecommender z obsługą danych."""
         self.data_handler = TrailDataHandler()
         self.weight_calculator = WeightCalculator()
+        
+        # Inicjalizuj generator raportów PDF jeśli dostępny
+        self.pdf_generator = PDFReportGenerator() if PDFReportGenerator else None
+    
+    def set_weights_from_user(self) -> Dict[str, float]:
+        """
+        Pobiera wagi od użytkownika i ustawia je w kalkulatorze.
+        
+        Returns:
+            Dict[str, float]: Ustawione wagi
+        """
+        return self.weight_calculator.get_weights_from_user()
 
     def _categorize_trail(self, trail: Dict[str, Any]) -> str:
         """
@@ -189,8 +207,7 @@ class TrailRecommender:
             if weather:
                 filtered_trails = self._calculate_comfort_indices(filtered_trails, weather)
                 
-            # Get weights from user and sort trails
-            weights = self.weight_calculator.get_weights_from_user()            
+            # Sort trails using current weights (weights should be set externally)
             filtered_trails = self.weight_calculator.sort_trails_by_weights(filtered_trails, weather or {})
               # Informacja o liczbie znalezionych tras
             if filtered_trails:
@@ -242,3 +259,136 @@ class TrailRecommender:
             print("\nRekomendacje zostały zapisane do pliku result.txt")
         except Exception as e:
             print(f"Błąd podczas zapisywania rekomendacji do pliku: {e}")
+
+    def generate_comprehensive_report(
+        self,
+        city: str,
+        date: str,
+        trails: List[Dict[str, Any]],
+        search_params: Dict[str, Any],
+        weather: Optional[Dict[str, Any]] = None,
+        output_filename: str = None
+    ) -> Optional[str]:
+        """
+        Generuje kompleksowy raport PDF z rekomendacjami tras.
+        
+        Args:
+            city: Nazwa miasta
+            date: Data wyszukiwania
+            trails: Lista rekomendowanych tras
+            search_params: Parametry wyszukiwania
+            weather: Dane pogodowe
+            output_filename: Nazwa pliku wyjściowego
+            
+        Returns:
+            Ścieżka do wygenerowanego raportu PDF lub None w przypadku błędu
+        """
+        if not self.pdf_generator:
+            print("Generator raportów PDF nie jest dostępny")
+            return None
+            
+        if not trails:
+            print("Brak tras do wygenerowania raportu")
+            return None
+        
+        try:
+            # Rozszerz dane tras o analizę tekstu i recenzji
+            enhanced_trails = []
+            for trail in trails:
+                enhanced_trail = self.data_handler.enhance_trail_with_analysis(trail)
+                enhanced_trails.append(enhanced_trail)
+            
+            # Przygotuj parametry wyszukiwania dla raportu
+            report_params = {
+                'city': city,
+                'date': date,
+                **search_params
+            }
+            
+            # Dodaj informacje pogodowe do parametrów
+            if weather:
+                report_params['weather'] = {
+                    'temperature': weather.get('temperature_2m_mean', 'N/A'),
+                    'precipitation': weather.get('precipitation_sum', 'N/A'),
+                    'sunshine': weather.get('sunshine_duration', 'N/A')
+                }
+            
+            # Generuj raport PDF
+            print("\nGenerowanie raportu PDF...")
+            
+            if not output_filename:
+                from datetime import datetime
+                timestamp = datetime.now().strftime('%Y%m%d_%H%M%S')
+                output_filename = f"raport_rekomendacji_{city}_{timestamp}.pdf"
+            
+            pdf_path = self.pdf_generator.generate_pdf_report(
+                enhanced_trails,
+                report_params,
+                output_filename
+            )
+            
+            print(f"✅ Raport PDF został wygenerowany: {pdf_path}")
+            return pdf_path
+            
+        except Exception as e:
+            print(f"❌ Błąd podczas generowania raportu PDF: {e}")
+            return None
+    
+    def recommend_trails_with_report(
+        self,
+        city: str,
+        date: str,
+        difficulty: Optional[int] = None,
+        terrain_type: Optional[str] = None,
+        min_length: Optional[float] = None,
+        max_length: Optional[float] = None,
+        min_sunshine: Optional[float] = None,
+        max_precipitation: Optional[float] = None,
+        min_temperature: Optional[float] = None,
+        max_temperature: Optional[float] = None,
+        category: Optional[str] = None,
+        generate_pdf: bool = False,
+        output_filename: Optional[str] = None
+    ) -> Dict[str, Any]:
+        """
+        Rekomenduje trasy i opcjonalnie generuje raport PDF.
+        
+        Returns:
+            Słownik z rekomendowanymi trasami i ścieżką do raportu PDF
+        """
+        # Standardowe rekomendacje tras
+        recommended_trails = self.recommend_trails(
+            city, date, difficulty, terrain_type, min_length, max_length,
+            min_sunshine, max_precipitation, min_temperature, max_temperature, category
+        )
+        
+        result = {
+            'trails': recommended_trails,
+            'count': len(recommended_trails),
+            'pdf_report': None
+        }
+        
+        # Generuj raport PDF jeśli jest żądany
+        if generate_pdf and recommended_trails:
+            search_params = {
+                'difficulty': difficulty,
+                'terrain_type': terrain_type,
+                'min_length': min_length,
+                'max_length': max_length,
+                'min_sunshine': min_sunshine,
+                'max_precipitation': max_precipitation,
+                'min_temperature': min_temperature,
+                'max_temperature': max_temperature,
+                'category': category
+            }
+            
+            # Pobierz dane pogodowe dla raportu
+            weather = self.data_handler.weather_api.get_weather_forecast(city, date)
+            
+            pdf_path = self.generate_comprehensive_report(
+                city, date, recommended_trails, search_params, weather, output_filename
+            )
+            
+            result['pdf_report'] = pdf_path
+        
+        return result

@@ -4,3 +4,13 @@ numpy==1.24.3
 python-dotenv==1.0.0
 aiohttp==3.8.5  # For async API requests
 urllib3==2.0.4  # Required by requests 
+# Nowe zależności dla rozbudowy projektu
+beautifulsoup4==4.12.2  # HTML parsing
+lxml==4.9.3  # XML/HTML parser
+matplotlib==3.7.2  # Charts and plots
+seaborn==0.12.2  # Statistical data visualization
+plotly==5.15.0  # Interactive plots
+reportlab==4.0.4  # PDF generation
+Pillow==10.0.0  # Image processing
+textblob==0.17.1  # Text processing and sentiment analysis
+nltk==3.8.1  # Natural language processing 

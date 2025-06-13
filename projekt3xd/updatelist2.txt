@@ -1,0 +1,160 @@
+ to wymagania dotyczące aktualizacji mojego programu. Chcę aby wszystkie rzeczy których uzywam aktualnie zostały, aby po dodaniu zmian doszło kilka nowych rzeczy które są podane poniżej ale żeby funkcje które są obecnie i  z nich korzystam zostały. 
+Uwaga: Jeśli coś już jest z tego już i działa możemy to zostawić.
+
+Etap 4: Integracja z Bazą Danych (Aplikacja Konsolowa)
+1. Wprowadzenie
+Czwarty etap projektu "Rekomendator tras turystycznych" skupia się na migracji z obsługi plików CSV/JSON do bazy danych SQLite oraz implementacji podstawowych mechanizmów persystencji danych w ramach aplikacji konsolowej.
+
+2. Cel etapu
+Przekształcenie dotychczasowego systemu opartego na plikach na aplikację z bazą danych oferującą:
+
+Efektywne przechowywanie danych tras i pogody w SQLite
+Migrację danych z poprzednich formatów CSV/JSON
+Podstawowe zapytania i filtrowanie
+Proste mechanizmy backup'u danych
+3. Wymagania funkcjonalne
+3.1. Projektowanie schematu bazy danych
+Klasa DatabaseManager
+
+Tworzenie i inicjalizacja bazy danych SQLite
+Definiowanie struktur tabel
+Podstawowe operacje CRUD
+Walidacja spójności danych
+Klasa MigrationTool
+
+Jednorazowa migracja danych z plików CSV/JSON do bazy
+Walidacja danych podczas importu
+Raportowanie błędów migracji w konsoli
+3.2. Repozytoria danych
+Klasa RouteRepository
+
+Podstawowe operacje na trasach (dodawanie, wyszukiwanie, aktualizacja)
+Filtrowanie tras według parametrów (trudność, długość, region)
+Wyszukiwanie tras w określonym promieniu od punktu
+Klasa WeatherRepository
+
+Przechowywanie danych pogodowych
+Pobieranie danych pogodowych dla lokalizacji i dat
+Obliczanie podstawowych statystyk pogodowych
+Klasa UserPreferenceRepository
+
+Zapisywanie i wczytywanie preferencji użytkownika
+Historia rekomendacji (opcjonalnie)
+4. Wymagania techniczne
+4.1. Nowe pliki lub edycje istniejących(może być ich więcej)
+data/
+  ├── database/         # Plik bazy SQLite
+  └── backups/          # Kopie zapasowe
+
+ 
+   ├── database/
+   │   ├── database_manager.py
+   │   ├── migration_tool.py
+   │   └── repositories/
+   │       ├── route_repository.py
+   │       ├── weather_repository.py
+   │       └── user_repository.py
+ data_handlers/    # Zmodyfikowane dla obsługi bazy
+
+├── sql/
+    └── schema.sql        # Definicje tabel
+
+4.2. Schema bazy danych (SQLite)
+-- Tabela tras
+CREATE TABLE routes (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    name TEXT NOT NULL,
+    region TEXT,
+    start_lat REAL NOT NULL,
+    start_lon REAL NOT NULL,
+    end_lat REAL NOT NULL,
+    end_lon REAL NOT NULL,
+    length_km REAL,
+    elevation_gain INTEGER,
+    difficulty INTEGER CHECK (difficulty BETWEEN 1 AND 5),
+    terrain_type TEXT,
+    tags TEXT,
+    description TEXT,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Tabela danych pogodowych
+CREATE TABLE weather_data (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    date DATE NOT NULL,
+    location_lat REAL NOT NULL,
+    location_lon REAL NOT NULL,
+    avg_temp REAL,
+    min_temp REAL,
+    max_temp REAL,
+    precipitation REAL,
+    sunshine_hours REAL,
+    cloud_cover INTEGER,
+    UNIQUE(date, location_lat, location_lon)
+);
+
+-- Tabela preferencji użytkownika
+CREATE TABLE user_preferences (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    user_name TEXT DEFAULT 'default',
+    preferred_temp_min REAL,
+    preferred_temp_max REAL,
+    max_precipitation REAL,
+    max_difficulty INTEGER,
+    max_length_km REAL,
+    preferred_terrain_types TEXT,
+    updated_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+-- Indeksy dla wydajności
+CREATE INDEX idx_routes_region ON routes(region);
+CREATE INDEX idx_routes_difficulty ON routes(difficulty);
+CREATE INDEX idx_weather_date ON weather_data(date);
+5. Nowe funkcjonalności
+5.1. Narzędzia administracyjne w konsoli
+Klasa DatabaseAdmin
+
+Wyświetlanie statystyk bazy danych (liczba tras, rekordów pogodowych)
+Sprawdzanie integralności danych
+Tworzenie kopii zapasowych
+Czyszczenie starych danych
+5.2. Rozszerzone raporty konsolowe
+Klasa DatabaseReports
+
+Najpopularniejsze regiony (według liczby tras)
+Statystyki pogodowe dla regionów
+Podsumowanie tras według trudności
+Lista tras bez danych pogodowych
+6. Przykłady implementacji
+6.1. Podstawowe użycie bazy danych
+# Inicjalizacja bazy danych
+db_manager = DatabaseManager('data/database/routes.db')
+db_manager.initialize_database()
+
+# Migracja danych z CSV
+migration_tool = MigrationTool(db_manager)
+migration_tool.migrate_routes_from_csv('data/legacy/routes.csv')
+migration_tool.migrate_weather_from_csv('data/legacy/weather.csv')
+
+# Wyszukiwanie tras
+route_repo = RouteRepository(db_manager)
+routes = route_repo.find_by_region_and_difficulty('Tatry', max_difficulty=3)
+6.2. Interfejs konsolowy z bazą danych
+# Rozszerzone menu główne w main
+
+    dodać opcje:
+    print("2. Dodaj nową trasę")
+    print("3. Statystyki bazy danych")
+    print("4. Utwórz kopię zapasową")
+    print("5. Importuj dane z CSV")
+    print("0. Wyjście")
+6.3. Backup i restore
+class BackupManager:
+    def create_backup(self, db_path, backup_path):
+        """Tworzy kopię zapasową bazy danych"""
+        
+    def restore_backup(self, backup_path, db_path):
+        """Przywraca bazę z kopii zapasowej"""
+        
+    def list_backups(self):
+        """Wyświetla dostępne kopie zapasowe"""

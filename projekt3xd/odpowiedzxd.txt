@@ -1,0 +1,67 @@
+# Wyjaśnienie składni Python: difficulty: Optional[int] = None, @dataclass, @staticmethod, @method
+
+1. difficulty: Optional[int] = None
+--------------------------------------------------
+Oznacza, że pole 'difficulty' może być liczbą całkowitą (int) lub None (brak wartości).
+- 'Optional[int]' to podpowiedź typu (type hint) z typing, czyli: int LUB None.
+- '= None' ustawia domyślną wartość na None.
+Przykład:
+    difficulty = 2      # OK
+    difficulty = None   # OK
+    difficulty = 3.5    # BŁĄD (to float, nie int)
+
+2. @dataclass
+--------------------------------------------------
+Dekorator z biblioteki 'dataclasses', który automatycznie generuje metody __init__, __repr__, __eq__ itd. dla klasy.
+Ułatwia tworzenie klas do przechowywania danych.
+Przykład:
+    @dataclass
+    class Example:
+        x: int
+        y: str = "abc"
+    # Tworzenie obiektu: obj = Example(5)
+
+3. @staticmethod
+--------------------------------------------------
+Dekorator, który oznacza metodę jako statyczną:
+- Nie ma dostępu do self (obiektu) ani cls (klasy)
+- Można ją wywołać bez tworzenia obiektu
+Przykład:
+    class Math:
+        @staticmethod
+        def add(a, b):
+            return a + b
+    Math.add(2, 3)  # = 5
+
+4. @method
+--------------------------------------------------
+W Pythonie NIE MA dekoratora @method!
+Najczęściej spotykane dekoratory dla metod w klasie to:
+- @staticmethod   # metoda statyczna (patrz wyżej)
+- @classmethod    # metoda klasowa (pierwszy argument to cls)
+- @property       # pozwala używać metody jak atrybutu
+
+Przykład @classmethod:
+    class Example:
+        @classmethod
+        def create_default(cls):
+            return cls(0)
+
+Przykład @property:
+    class Circle:
+        def __init__(self, r):
+            self.r = r
+        @property
+        def area(self):
+            return 3.14 * self.r ** 2
+    c = Circle(2)
+    print(c.area)  # = 12.56
+
+Podsumowanie:
+--------------------------------------------------
+- Optional[int] = None: pole może być int lub None
+- @dataclass: automatyczne generowanie metod dla klasy danych
+- @staticmethod: metoda w klasie, która nie korzysta z self/cls
+- @method: NIE ISTNIEJE w Pythonie, są za to @staticmethod, @classmethod, @property
+
+# Wyjaśnienie składni Python: difficulty: Optional[int] = None, @dataclass, @staticmethod, @method 
