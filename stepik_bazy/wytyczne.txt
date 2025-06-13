@@ -1,0 +1,57 @@
+Zadanie: System Zarządzania Biblioteką Domową
+Stwórz aplikację konsolową do zarządzania biblioteką domową przy użyciu bazy danych SQLite i języka Python. System powinien umożliwiać katalogowanie książek wraz z informacjami o ich autorach.
+
+Wymagania funkcjonalne
+Aplikacja powinna oferować następujące funkcjonalności dostępne przez menu konsolowe:
+
+Zarządzanie autorami:
+
+Dodawanie nowych autorów do bazy danych
+Wyświetlanie listy wszystkich autorów
+Wyszukiwanie autora po nazwisku
+Edycja danych autora
+Usuwanie autora (tylko jeśli nie ma przypisanych książek)
+Zarządzanie książkami:
+
+Dodawanie nowych książek z przypisaniem do autora
+Wyświetlanie wszystkich książek w bibliotece
+Wyszukiwanie książek po tytule, autorze lub roku wydania
+Edycja informacji o książce
+Usuwanie książek z biblioteki
+Wyświetlanie książek konkretnego autora
+Raporty i statystyki:
+
+Liczba książek w bibliotece
+Liczba autorów w bazie
+Najstarsze i najnowsze książki
+Autorzy z największą liczbą książek
+Wymagania techniczne
+Struktura bazy danych:
+
+Tabela authors zawierająca: id, imię, nazwisko, rok urodzenia, narodowość
+Tabela books zawierająca: id, tytuł, autor_id (klucz obcy), rok wydania, gatunek, liczba stron, opis
+Relacja jeden-do-wielu między autorami a książkami
+Wymagania implementacyjne:
+
+Wykorzystanie modułu sqlite3 wbudowanego w Python
+Walidacja danych wejściowych użytkownika
+Obsługa błędów bazy danych
+Czytelny interfejs konsolowy z menu i podpowiedziami
+Komentarze w kodzie wyjaśniające kluczowe operacje
+Struktura projektu
+biblioteka/
+├── src/
+│   ├── database_manager.py    # Zarządzanie połączeniem i operacjami na bazie
+│   ├── models.py              # Definicje klas Author i Book
+│   ├── repositories.py        # Repozytoria dla autorów i książek
+│   └── ui.py                  # Interfejs użytkownika (menu konsolowe)
+├── data/
+│   └── library.db            # Plik bazy danych SQLite
+├── sql/
+│   └── schema.sql            # Skrypt tworzący tabele
+└── main.py                   # Główny plik aplikacji
+Przykładowe dane testowe
+Po uruchomieniu aplikacji powinna być możliwość dodania przykładowych danych:
+
+Autorzy: Adam Mickiewicz, Henryk Sienkiewicz, Czesław Miłosz
+Książki: "Pan Tadeusz", "Quo Vadis", "Dolina Issy"

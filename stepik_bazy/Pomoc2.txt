@@ -1,0 +1,433 @@
+Wprowadzenie do SQLAlchemy - Abstrakcja nad SQL
+Instalacja i Podstawowa Konfiguracja
+# pip install sqlalchemy
+
+from sqlalchemy import create_engine
+engine = create_engine('sqlite:///example.db', echo=True)
+SQLAlchemy reprezentuje znaczący krok w ewolucji narzędzi do pracy z bazami danych w Pythonie. Podczas gdy moduł sqlite3 wymaga pisania surowego SQL-a, SQLAlchemy oferuje abstrakcję, która pozwala myśleć o operacjach bazodanowych w kategoriach obiektów Pythona. To przejście można porównać do różnicy między pisaniem w języku maszynowym a używaniem języka wysokiego poziomu.
+
+Engine w SQLAlchemy pełni rolę fabryki połączeń - centralnego punktu konfiguracji, który zarządza wszystkimi aspektami komunikacji z bazą danych. Nie nawiązuje on natychmiastowego połączenia, lecz przechowuje informacje potrzebne do jego utworzenia w razie potrzeby. To podejście typu "lazy initialization" optymalizuje wykorzystanie zasobów systemowych.
+
+Parametr echo=True włącza tryb debugowania, w którym wszystkie wykonywane polecenia SQL są wyświetlane na konsoli. Jest to nieocenione narzędzie do nauki i debugowania, pozwalające zrozumieć jak konstrukcje wysokopoziomowe SQLAlchemy przekładają się na konkretne zapytania SQL.
+
+URL połączenia ('sqlite:///example.db') następuje standardzie określonym przez RFC 3986 dla URI. Część przed pierwszym dwukropkiem określa typ bazy danych, trzy ukośniki wskazują na plik lokalny, a pozostała część to ścieżka do pliku. SQLAlchemy obsługuje dziesiątki różnych silników bazodanowych poprzez ten zunifikowany interfejs.
+
+Dwa Podejścia: Core vs ORM
+# Core - konstrukcje SQL
+from sqlalchemy import MetaData, Table, Column, Integer, String
+
+metadata = MetaData()
+users = Table('users', metadata,
+    Column('id', Integer, primary_key=True),
+    Column('name', String(50))
+)
+
+# ORM - klasy jako tabele
+from sqlalchemy.ext.declarative import declarative_base
+Base = declarative_base()
+
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    name = Column(String(50))
+SQLAlchemy oferuje dwa fundamentalnie różne sposoby pracy z bazami danych, odpowiadające różnym filozofiom programowania i potrzebom projektowym. Core reprezentuje podejście funkcjonalne, gdzie operacje bazodanowe traktuje się jak konstrukcje matematyczne. ORM (Object-Relational Mapping) implementuje paradygmat obiektowy, gdzie tabele stają się klasami, a rekordy obiektami.
+
+Wybór między Core a ORM nie jest przypadkowy i zależy od charakteru aplikacji. Core oferuje maksymalną kontrolę i wydajność, podobnie jak programowanie w języku C daje kontrolę nad każdym aspektem wykonania programu. Jest idealny do aplikacji analitycznych, raportowych i wszędzie tam, gdzie wydajność jest krytyczna.
+
+ORM natomiast promuje produktywność programisty i czytelność kodu kosztem pewnej abstrakcji. Pozwala myśleć o danych w kategoriach obiektów biznesowych zamiast tabel i kolumn. Jest szczególnie wartościowy w aplikacjach CRUD (Create, Read, Update, Delete), gdzie głównym celem jest manipulacja danymi zgodnie z regułami biznesowymi.
+
+Metadata w podejściu Core pełni rolę rejestru wszystkich struktur bazodanowych. Można ją porównać do spisu treści książki - zawiera informacje o wszystkich tabelach, ich kolumnach, indeksach i relacjach. Declarative Base w ORM spełnia podobną funkcję, ale dodatkowo zapewnia mechanizm dziedziczenia i automatycznej konfiguracji klas modeli.
+
+SQLAlchemy Core - Konstrukcje SQL w Pythonie
+Definicja i Operacje na Tabelach
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, select, insert
+
+engine = create_engine('sqlite:///core_example.db')
+metadata = MetaData()
+
+users = Table('users', metadata,
+    Column('id', Integer, primary_key=True),
+    Column('name', String(50)),
+    Column('email', String(100))
+)
+
+metadata.create_all(engine)
+
+# Operacje CRUD
+with engine.connect() as conn:
+    # INSERT
+    stmt = insert(users).values(name='Jan', email='jan@example.com')
+    conn.execute(stmt)
+    
+    # SELECT
+    stmt = select(users)
+    result = conn.execute(stmt)
+    
+    conn.commit()
+SQLAlchemy Core wprowadza koncepcję konstrukcji SQL jako obiektów Pythona. Zamiast budować zapytania jako stringi, tworzy się je poprzez łączenie obiektów reprezentujących różne elementy języka SQL. To podejście eliminuje błędy składniowe i zapewnia automatyczną parametryzację zapytań.
+
+Obiekt Table w Core można porównać do szablonu lub formy - definiuje strukturę bez tworzenia fizycznej reprezentacji w bazie danych. Dopiero wywołanie metadata.create_all() powoduje wygenerowanie i wykonanie odpowiednich poleceń CREATE TABLE. To rozdzielenie definicji od implementacji pozwala na testowanie logiki bez wpływu na prawdziwą bazę danych.
+
+Connection context manager zapewnia automatyczne zarządzanie transakcjami. W przeciwieństwie do raw SQL, gdzie trzeba pamiętać o wywołaniu commit() lub rollback(), SQLAlchemy automatycznie zatwierdza transakcję na końcu bloku with, o ile nie wystąpił wyjątek. W przypadku błędu, automatycznie wykonuje rollback.
+
+Konstrukcje insert(), select(), update() i delete() reprezentują odpowiednie polecenia SQL, ale w formie obiektowej. Pozwala to na budowanie zapytań krok po kroku, ich modyfikację przed wykonaniem i ponowne wykorzystanie. To podejście kompozycyjne umożliwia tworzenie bibliotek funkcji, które operują na częściowo zbudowanych zapytaniach.
+
+Zaawansowane Zapytania
+from sqlalchemy import and_, or_, func
+
+# Złożone warunki WHERE
+stmt = select(users).where(
+    and_(
+        users.c.name.like('J%'),
+        users.c.id > 10
+    )
+)
+
+# Agregacje
+stmt = select(func.count(users.c.id), func.max(users.c.id))
+
+# JOIN między tabelami
+stmt = select(users, books).select_from(
+    users.join(books, users.c.id == books.c.author_id)
+)
+Zaawansowane konstrukcje SQLAlchemy Core umożliwiają budowanie złożonych zapytań przy zachowaniu czytelności i bezpieczeństwa kodu. Funkcje and_() i or_() pozwalają na logiczne łączenie warunków w sposób bardziej eksplicytny niż w surowym SQL, gdzie kolejność operatorów może wprowadzać niejednoznaczność.
+
+Moduł func stanowi bramę do wszystkich funkcji SQL dostępnych w danym silniku bazodanowym. SQLAlchemy automatycznie przekłada wywołania takie jak func.count() na odpowiednie funkcje SQL (COUNT() w większości dialektów). To podejście zapewnia przenośność kodu między różnymi systemami bazodanowych.
+
+Operacje JOIN w Core wymagają jawnego określenia warunków łączenia tabel. Choć może się to wydawać rozwlekłe w porównaniu z ORM, daje pełną kontrolę nad sposobem łączenia i pozwala na optymalizację wydajności. Metoda select_from() określa źródło danych dla zapytania, co jest szczególnie ważne przy złożonych JOIN-ach wielotabelowych.
+
+SQLAlchemy ORM - Programowanie Obiektowe z Bazą Danych
+Definicja Modeli
+from sqlalchemy.ext.declarative import declarative_base
+from sqlalchemy import Column, Integer, String, ForeignKey
+from sqlalchemy.orm import relationship, sessionmaker
+
+Base = declarative_base()
+
+class Author(Base):
+    __tablename__ = 'authors'
+    
+    id = Column(Integer, primary_key=True)
+    name = Column(String(100))
+    
+    books = relationship("Book", back_populates="author")
+
+class Book(Base):
+    __tablename__ = 'books'
+    
+    id = Column(Integer, primary_key=True)
+    title = Column(String(200))
+    author_id = Column(Integer, ForeignKey('authors.id'))
+    
+    author = relationship("Author", back_populates="books")
+
+# Konfiguracja sesji
+Session = sessionmaker(bind=engine)
+session = Session()
+Object-Relational Mapping reprezentuje jeden z najbardziej znaczących paradygmatów w programowaniu aplikacji bazodanowych. ORM działa jak tłumacz między światem obiektów programistycznych a relacyjną strukturą bazy danych. Każda klasa modelu odpowiada tabeli, każda instancja klasy reprezentuje wiersz, a atrybuty obiektu odpowiadają kolumnom.
+
+Declarative Base pełni funkcję metaklasy, która automatycznie konfiguruje mechanizmy ORM dla wszystkich dziedziczących po niej klas. Proces ten obejmuje analizę atrybutów klasy, generowanie metadanych tabeli i konfigurację mapowania między atrybutami Python a kolumnami SQL. To podejście deklaratywne eliminuje boilerplate code i zapewnia spójność konfiguracji.
+
+Relationship definiuje logiczne powiązania między modelami bez wpływu na fizyczną strukturę bazy danych. Parametr back_populates tworzy dwukierunkowe powiązanie, gdzie zmiana w jednym obiekcie automatycznie odzwierciedla się w powiązanym. Jest to realizacja wzorca projektowego Observer na poziomie ORM.
+
+Session w SQLAlchemy ORM implementuje wzorzec Unit of Work, który śledzi wszystkie zmiany dokonane na obiektach w trakcie sesji. Działa jak inteligentny notatnik, który pamięta co zostało dodane, zmienione lub usunięte, a następnie w odpowiednim momencie tłumaczy te operacje na polecenia SQL. To podejście minimalizuje liczbę komunikatów z bazą danych i zapewnia spójność transakcji.
+
+Operacje CRUD w ORM
+# CREATE
+author = Author(name='J.K. Rowling')
+session.add(author)
+session.commit()
+
+# READ
+authors = session.query(Author).all()
+author = session.query(Author).filter(Author.name == 'J.K. Rowling').first()
+
+# UPDATE
+author.name = 'Joanne Rowling'
+session.commit()
+
+# DELETE
+session.delete(author)
+session.commit()
+Operacje CRUD w ORM odbywają się na poziomie obiektów Python, co radykalnie zmienia sposób myślenia o manipulacji danych. Zamiast konstruować polecenia SQL, programista pracuje z obiektami używając naturalnych konstrukcji języka Python. Ta abstrakcja nie tylko upraszcza kod, ale także zmniejsza prawdopodobieństwo błędów i czyni aplikację bardziej maintainable.
+
+Metoda session.add() nie wykonuje natychmiastowego INSERT do bazy danych. Zamiast tego rejestruje obiekt w sesji jako "pending" - oczekujący na zapis. Faktyczne polecenie SQL zostanie wygenerowane i wykonane dopiero przy wywołaniu commit() lub gdy sesja będzie potrzebować danych (na przykład przy generowaniu klucza głównego).
+
+Lazy loading stanowi kluczową optymalizację ORM. Gdy pobiera się obiekt Author, powiązane książki nie są automatycznie ładowane z bazy danych. Dopiero pierwszy dostęp do atrybutu books powoduje wykonanie dodatkowego zapytania. Ten mechanizm oszczędza pamięć i przepustowość sieci, ale wymaga świadomości programisty aby uniknąć problemu N+1 zapytań.
+
+Automatic dirty tracking oznacza, że sesja automatycznie wykrywa zmiany w atrybutach śledzonej jednostki. Gdy modyfikuje się atrybut obiektu pobranego z bazy, ORM zaznacza go jako "dirty" i przy następnym commit() generuje odpowiednie polecenie UPDATE. Ten mechanizm eliminuje potrzebę jawnego informowania ORM o zmianach.
+
+Wzorce Projektowe w Aplikacjach Bazodanowych
+Repository Pattern - Enkapsulacja Dostępu do Danych
+from abc import ABC, abstractmethod
+
+class BaseRepository(ABC):
+    @abstractmethod
+    def add(self, entity): pass
+    
+    @abstractmethod
+    def get_by_id(self, id): pass
+
+class AuthorRepository(BaseRepository):
+    def __init__(self, session):
+        self.session = session
+    
+    def add(self, author):
+        self.session.add(author)
+        self.session.commit()
+        return author
+    
+    def get_by_id(self, id):
+        return self.session.query(Author).get(id)
+    
+    def find_by_name(self, name):
+        return self.session.query(Author).filter(
+            Author.name.ilike(f'%{name}%')
+        ).all()
+Repository Pattern stanowi jeden z fundamentalnych wzorców projektowych w aplikacjach bazodanowych. Jego głównym celem jest enkapsulacja logiki dostępu do danych i oddzielenie jej od logiki biznesowej aplikacji. Można to porównać do biblioteki publicznej, gdzie bibliotekarze (repozytoria) znają system katalogowy i potrafią szybko odnaleźć potrzebne książki, podczas gdy czytelnicy (logika biznesowa) mogą skupić się na treści zamiast na szczegółach organizacyjnych.
+
+Abstrakcyjna klasa bazowa definiuje kontrakt, który muszą spełniać wszystkie repozytoria. To podejście zapewnia spójność interfejsu i ułatwia testowanie poprzez możliwość tworzenia mock'ów. W testach jednostkowych można zastąpić prawdziwe repozytorium symulacją, która nie wykonuje rzeczywistych operacji bazodanowych.
+
+Enkapsulacja złożonych zapytań w metodach repozytorium znacznie poprawia czytelność kodu i jego ponowne wykorzystanie. Metoda find_by_name() ukrywa szczegóły implementacji wyszukiwania (użycie ILIKE, dodawanie wildcard'ów) za czytelnym interfejsem. Jeśli w przyszłości zajdzie potrzeba zmiany mechanizmu wyszukiwania, modyfikacja będzie wymagana tylko w jednym miejscu.
+
+Dependency Injection poprzez konstruktor pozwala na łatwe konfigurowanie repozytoriów z różnymi sesjami bazodanowymi. Taka architektura ułatwia tworzenie środowisk testowych z oddzielną bazą danych oraz implementację wzorca Unit of Work na poziomie aplikacji.
+
+Database Manager - Centralizacja Zarządzania
+class DatabaseManager:
+    def __init__(self, database_url):
+        self.engine = create_engine(database_url)
+        self.session_factory = sessionmaker(bind=self.engine)
+    
+    def create_session(self):
+        return self.session_factory()
+    
+    def initialize_schema(self):
+        Base.metadata.create_all(self.engine)
+    
+    def get_connection(self):
+        return self.engine.connect()
+Database Manager implementuje wzorzec Singleton na poziomie konfiguracji bazy danych, centralizując wszystkie aspekty zarządzania połączeniami i sesji. Podobnie jak dyrektor szkoły koordinuje pracę różnych departamentów, Database Manager koordynuje dostęp do bazy danych z różnych części aplikacji.
+
+Session Factory pozwala na tworzenie nowych sesji na żądanie, co jest szczególnie ważne w aplikacjach wielowątkowych lub serwerowych. Każdy wątek lub request powinien mieć własną sesję, aby uniknąć konfliktów i zapewnić izolację transakcji. Factory pattern zapewnia spójność konfiguracji wszystkich tworzonych sesji.
+
+Centralizacja konfiguracji znacznie ułatwia zarządzanie aplikacją w różnych środowiskach (development, testing, production). Zmiana parametrów połączenia wymaga modyfikacji tylko w jednym miejscu, a nie w każdej klasie korzystającej z bazy danych. To podejście wspiera również implementację wzorca Configuration Management.
+
+Obsługa Błędów i Walidacja - Budowanie Odpornych Aplikacji
+Hierarchia Wyjątków
+from sqlalchemy.exc import IntegrityError, OperationalError
+
+try:
+    session.add(user)
+    session.commit()
+except IntegrityError as e:
+    session.rollback()
+    if "UNIQUE constraint failed" in str(e):
+        raise ValueError("Użytkownik o tym emailu już istnieje")
+except OperationalError as e:
+    session.rollback()
+    raise ConnectionError("Błąd połączenia z bazą danych")
+Hierarchia wyjątków w SQLAlchemy odzwierciedla różne kategorie problemów, które mogą wystąpić podczas operacji bazodanowych. IntegrityError sygnalizuje naruszenie ograniczeń integralności danych (unique, foreign key, check constraints), podczas gdy OperationalError wskazuje na problemy na poziomie komunikacji z bazą danych lub błędy składniowe SQL.
+
+Właściwa obsługa wyjątków wymaga zrozumienia kontekstu, w którym błąd wystąpił. IntegrityError często wskazuje na błąd w logice biznesowej aplikacji - próbę utworzenia duplikatu, usunięcia rekordu, do którego odwołują się inne rekordy, lub naruszenie reguł biznesowych zaimplementowanych jako ograniczenia bazodanowe.
+
+Rollback po błędzie jest krytyczny dla zachowania spójności sesji. Gdy transakcja zostanie przerwana błędem, sesja pozostaje w niestabilnym stanie i nie może być użyta do dalszych operacji dopóki nie zostanie wykonany rollback. Ignorowanie tego może prowadzić do nieprzewidywalnego zachowania aplikacji.
+
+Transformacja wyjątków technicznych na wyjątki biznesowe stanowi ważną część architektury aplikacji. Zamiast propagować szczegóły implementacyjne (SQLAlchemyError) do warstwy prezentacji, lepiej jest tłumaczyć je na wyjątki zrozumiałe w kontekście domeny biznesowej (ValueError, BusinessLogicError).
+
+Walidacja Danych na Różnych Poziomach
+from dataclasses import dataclass
+from typing import List
+
+@dataclass
+class ValidationResult:
+    is_valid: bool
+    errors: List[str]
+
+def validate_email(email: str) -> ValidationResult:
+    errors = []
+    
+    if not email:
+        errors.append("Email jest wymagany")
+    elif '@' not in email:
+        errors.append("Nieprawidłowy format emaila")
+    elif len(email) > 100:
+        errors.append("Email jest zbyt długi")
+    
+    return ValidationResult(len(errors) == 0, errors)
+
+class User(Base):
+    __tablename__ = 'users'
+    
+    id = Column(Integer, primary_key=True)
+    email = Column(String(100), nullable=False, unique=True)
+    
+    def __init__(self, email):
+        validation = validate_email(email)
+        if not validation.is_valid:
+            raise ValueError("; ".join(validation.errors))
+        self.email = email
+Walidacja wielopoziomowa stanowi kluczowy element budowania niezawodnych aplikacji bazodanowych. Pierwszy poziom walidacji w interfejsie użytkownika zapobiega wprowadzaniu oczywiście błędnych danych i zapewnia lepsze doświadczenie użytkownika poprzez natychmiastowe informowanie o problemach.
+
+Walidacja na poziomie modelu danych chroni przed błędami programistycznymi i zapewnia spójność danych niezależnie od sposobu ich wprowadzania do systemu. Jest to szczególnie ważne w aplikacjach z wieloma punktami wejścia (web interface, API, batch processing).
+
+Ograniczenia bazodanowe stanowią ostatnią linię obrony i zapewniają integralność danych nawet w przypadku błędów w kodzie aplikacji. Są szczególnie istotne w środowiskach, gdzie wiele aplikacji współdzieli tę samą bazę danych.
+
+Wzorzec Result Object (ValidationResult) zapewnia strukturalny sposób przekazywania informacji o wynikach walidacji. Zamiast rzucać wyjątki od razu, funkcja walidacyjna zwraca obiekt zawierający szczegółowe informacje o problemach, co pozwala na bardziej elastyczne przetwarzanie błędów.
+
+from sqlalchemy import create_engine, MetaData, Table, Column, Integer, String, ForeignKey
+from sqlalchemy import select, insert, and_, func
+from sqlalchemy.orm import DeclarativeBase, relationship, sessionmaker, joinedload
+from sqlalchemy.exc import IntegrityError, OperationalError
+from dataclasses import dataclass
+from typing import List
+from contextlib import contextmanager
+import re
+
+
+class Base(DeclarativeBase):
+    pass
+
+
+class DatabaseManager:
+    def __init__(self, database_url: str):
+        self.engine = create_engine(database_url, echo=False)
+        self.session_factory = sessionmaker(bind=self.engine)
+        self._initialize()
+
+    def _initialize(self):
+        self.metadata = MetaData()
+        self.authors_core = Table('authors_core', self.metadata,
+                                  Column('id', Integer, primary_key=True),
+                                  Column('name', String(100), nullable=False),
+                                  Column('email', String(100), unique=True)
+                                  )
+        Base.metadata.create_all(self.engine)
+        self.metadata.create_all(self.engine)
+
+    @contextmanager
+    def get_session(self):
+        session = self.session_factory()
+        try:
+            yield session
+            session.commit()
+        except Exception:
+            session.rollback()
+            raise
+        finally:
+            session.close()
+
+
+class Author(Base):
+    __tablename__ = 'authors_orm'
+
+    id = Column(Integer, primary_key=True)
+    name = Column(String(100), nullable=False)
+    email = Column(String(100), unique=True)
+    books = relationship("Book", back_populates="author", lazy='select')
+
+
+class Book(Base):
+    __tablename__ = 'books_orm'
+
+    id = Column(Integer, primary_key=True)
+    title = Column(String(200), nullable=False)
+    author_id = Column(Integer, ForeignKey('authors_orm.id'))
+    pages = Column(Integer)
+    author = relationship("Author", back_populates="books")
+
+
+@dataclass
+class ValidationResult:
+    is_valid: bool
+    errors: List[str]
+
+
+class DataValidator:
+    @staticmethod
+    def validate_author(name: str, email: str) -> ValidationResult:
+        errors = []
+        if not name or len(name.strip()) < 2:
+            errors.append("Invalid name")
+        if not email or not re.match(r'^[^@]+@[^@]+\.[^@]+$', email):
+            errors.append("Invalid email")
+        return ValidationResult(len(errors) == 0, errors)
+
+
+class AuthorRepository:
+    def __init__(self, db_manager: DatabaseManager):
+        self.db_manager = db_manager
+
+    def create_author(self, name: str, email: str) -> dict:
+        validation = DataValidator.validate_author(name, email)
+        if not validation.is_valid:
+            return {"success": False, "errors": validation.errors}
+
+        try:
+            with self.db_manager.get_session() as session:
+                existing = session.query(Author).filter(Author.email == email).first()
+                if existing:
+                    return {"success": False, "errors": ["Email exists"]}
+
+                author = Author(name=name.strip(), email=email.strip())
+                session.add(author)
+                session.flush()
+                return {"success": True, "id": author.id}
+
+        except IntegrityError:
+            return {"success": False, "errors": ["Database constraint violation"]}
+        except OperationalError:
+            return {"success": False, "errors": ["Database connection error"]}
+
+    def find_with_books(self) -> List[dict]:
+        with self.db_manager.get_session() as session:
+            authors = session.query(Author).options(joinedload(Author.books)).all()
+            return [
+                {
+                    "name": author.name,
+                    "books_count": len(author.books),
+                    "books": [book.title for book in author.books]
+                }
+                for author in authors
+            ]
+
+    def core_operations(self, name: str, email: str) -> dict:
+        try:
+            with self.db_manager.engine.connect() as conn:
+                stmt = insert(self.db_manager.authors_core).values(name=name, email=email)
+                result = conn.execute(stmt)
+
+                stmt = select(self.db_manager.authors_core).where(
+                    self.db_manager.authors_core.c.id == result.inserted_primary_key[0]
+                )
+                row = conn.execute(stmt).fetchone()
+                conn.commit()
+
+                return {"success": True, "data": {"name": row.name, "email": row.email}}
+        except Exception as e:
+            return {"success": False, "error": str(e)}
+
+
+def run_demo():
+    db = DatabaseManager('sqlite:///sqlalchemy_demo.db')
+    repo = AuthorRepository(db)
+
+    # ORM operations
+    result1 = repo.create_author("Virginia Woolf", "woolf@example.com")
+    result2 = repo.create_author("James Joyce", "joyce@example.com")
+
+    # Add books
+    with db.get_session() as session:
+        author = session.query(Author).filter(Author.name == "Virginia Woolf").first()
+        if author:
+            book = Book(title="Mrs. Dalloway", author_id=author.id, pages=194)
+            session.add(book)
+
+    # Query with relationships
+    authors_data = repo.find_with_books()
+
+    # Core operations
+    core_result = repo.core_operations("Franz Kafka", "kafka@example.com")
+
+
+if __name__ == "__main__":
+    run_demo()

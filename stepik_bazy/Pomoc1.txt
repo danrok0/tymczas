@@ -1,0 +1,258 @@
+System zarządzania bazą danych można porównać do biblioteki publicznej z bardzo zaawansowanym systemem katalogowym. Tak jak biblioteka organizuje tysiące książek w sposób umożliwiający szybkie odnalezienie konkretnej pozycji, baza danych organizuje informacje w struktury zwane tabelami, które pozwalają na efektywne przechowywanie, wyszukiwanie i modyfikowanie danych.
+
+Podstawowa różnica między przechowywaniem danych w plikach a wykorzystaniem bazy danych leży w sposobie zarządzania informacjami. Pliki to jak pudła z dokumentami w piwnicy - można w nich coś schować, ale znalezienie konkretnego dokumentu wymaga przeszukania całego pudła. Baza danych natomiast to jak profesjonalny system archiwizacji z indeksami, katalogami i mechanizmami zapewniającymi, że dokumenty nie zginą i nie zostaną przypadkowo uszkodzone.
+
+SQLite, będący przedmiotem pierwszej części tego przewodnika, stanowi doskonały punkt wyjścia do nauki, ponieważ nie wymaga instalacji dodatkowego oprogramowania ani konfiguracji serwera. Jest to tak zwana "embedded database" - baza danych wbudowana w aplikację, która przechowuje wszystkie dane w jednym pliku na dysku. Pomimo swojej prostoty, SQLite implementuje większość standardów SQL i oferuje mechanizmy transakcji, co czyni go idealnym narzędziem edukacyjnym.
+
+Etap 1: Fundamenty SQLite3 - Pierwsze Kroki w Świecie Baz Danych
+Nawiązywanie Połączenia - Brama do Świata Danych
+import sqlite3
+
+# Podstawowe połączenie
+conn = sqlite3.connect('example.db')
+cursor = conn.cursor()
+
+# Zawsze zamykać połączenie
+conn.close()
+Proces nawiązywania połączenia z bazą danych SQLite można porównać do otwierania sejfu bankowego. Funkcja sqlite3.connect() działa jak klucz, który otwiera dostęp do przechowywanej informacji. Gdy podaje się nazwę pliku, SQLite sprawdza czy taki plik istnieje na dysku. Jeśli tak, otwiera go i udostępnia zawartość. Jeśli plik nie istnieje, automatycznie tworzy nową, pustą bazę danych.
+
+Obiekt connection reprezentuje sesję komunikacji z bazą danych. Jest to kanał, przez który wszystkie polecenia będą przesyłane do silnika bazodanowego. Analogicznie do połączenia telefonicznego, które trzeba nawiązać przed rozmową i zakończyć po jej skończeniu, połączenie z bazą danych należy otworzyć przed użyciem i zamknąć po zakończeniu pracy.
+
+Zastosowanie context managera stanowi znacznie bezpieczniejszą alternatywę dla ręcznego zarządzania połączeniami:
+
+# Bezpieczniejsze podejście
+with sqlite3.connect('example.db') as conn:
+    cursor = conn.cursor()
+    # Praca z bazą danych
+Context manager automatycznie zamyka połączenie nawet w przypadku wystąpienia błędu w trakcie wykonywania operacji. Jest to przykład zastosowania wzorca RAII (Resource Acquisition Is Initialization), który zapewnia, że zasoby systemowe są zawsze prawidłowo zwalniane.
+
+Specjalną wartością jest :memory:, która tworzy bazę danych w pamięci operacyjnej zamiast na dysku. Taka baza istnieje tylko przez czas życia programu i jest automatycznie usuwana po zakończeniu. Wykorzystuje się ją głównie do testów jednostkowych i prototypowania, gdzie szybkość wykonania jest ważniejsza niż trwałość danych.
+
+Cursor - Interfejs Wykonywania Poleceń
+cursor = conn.cursor()
+cursor.execute("SELECT 1 + 1")
+result = cursor.fetchone()
+Cursor można najlepiej zrozumieć jako wskaźnik pozycji w tekście podczas edycji dokumentu. Tak jak kursor tekstowy pokazuje miejsce, w którym pojawi się następny znak, cursor bazodanowy wskazuje aktualną pozycję w zbiorze wyników zapytania. Jest to interfejs umożliwiający wykonywanie poleceń SQL i pobieranie wyników.
+
+Fundamentalną cechą cursora jest jego stanowość - pamięta kontekst poprzednich operacji. Po wykonaniu zapytania SELECT cursor "stoi" przed pierwszym wierszem wyników. Wywołanie fetchone() przenosi go do pierwszego wiersza i zwraca jego zawartość. Kolejne wywołanie przeniesie go do drugiego wiersza, i tak dalej.
+
+Rozdział odpowiedzialności między Connection a Cursor odzwierciedla architekturę większości systemów bazodanowych. Connection zarządza sesją i transakcjami na wysokim poziomie, podczas gdy Cursor obsługuje wykonywanie konkretnych poleceń i iterację przez wyniki. To rozdzielenie pozwala na równoczesne prowadzenie wielu operacji w ramach jednej sesji.
+
+Podstawowe Operacje CRUD
+# CREATE - tworzenie tabeli
+cursor.execute("""
+    CREATE TABLE users (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT NOT NULL,
+        email TEXT UNIQUE
+    )
+""")
+
+# INSERT - dodawanie danych
+cursor.execute("INSERT INTO users (name, email) VALUES (?, ?)", 
+               ("Jan Kowalski", "jan@example.com"))
+
+# SELECT - pobieranie danych
+cursor.execute("SELECT * FROM users")
+rows = cursor.fetchall()
+
+# UPDATE - aktualizacja
+cursor.execute("UPDATE users SET email = ? WHERE name = ?", 
+               ("jan.kowalski@example.com", "Jan Kowalski"))
+
+# DELETE - usuwanie
+cursor.execute("DELETE FROM users WHERE id = ?", (1,))
+
+conn.commit()
+Akronim CRUD (Create, Read, Update, Delete) opisuje cztery podstawowe operacje możliwe do wykonania na danych w bazie. Te operacje stanowią fundament wszystkich systemów zarządzania informacjami, od prostych aplikacji po złożone systemy enterprise.
+
+Operacja CREATE w kontekście SQL odnosi się głównie do tworzenia struktur (tabel, indeksów), choć czasem używa się tego terminu również w odniesieniu do dodawania nowych rekordów. Polecenie CREATE TABLE definiuje schemat tabeli - czyli jej "szkielet" określający jakie typy informacji będą w niej przechowywane. Można to porównać do projektowania formularza papierowego, gdzie najpierw decyduje się jakie pola będą dostępne do wypełnienia.
+
+Klauzula PRIMARY KEY AUTOINCREMENT zasługuje na szczególną uwagę. Primary key to unikalny identyfikator każdego wiersza w tabeli, podobny do numeru PESEL - żaden wiersz nie może mieć takiego samego identyfikatora jak inny. AUTOINCREMENT powoduje, że baza danych automatycznie przypisuje kolejne numery nowym rekordom, zwalniając programistę z konieczności ręcznego zarządzania identyfikatorami.
+
+Wykorzystanie parametryzowanych zapytań z symbolami zapytania (?) stanowi krytyczny element bezpieczeństwa. Bez parametryzacji kod byłby podatny na ataki SQL injection, gdzie złośliwy użytkownik mógłby wstrzyknąć własny kod SQL poprzez formularz aplikacji. Parametryzowane zapytania działają jak filtr, który oddziela dane od kodu wykonywalnego.
+
+Zarządzanie Transakcjami
+try:
+    cursor.execute("UPDATE accounts SET balance = balance - 100 WHERE id = 1")
+    cursor.execute("UPDATE accounts SET balance = balance + 100 WHERE id = 2")
+    conn.commit()  # Zatwierdź wszystkie zmiany
+except Exception:
+    conn.rollback()  # Cofnij wszystkie zmiany
+Koncepcja transakcji należy do najważniejszych w systemach bazodanowych. Transakcja to grupa operacji, które muszą być wykonane atomowo - czyli albo wszystkie się powiodą, albo żadna nie zostanie zapisana w bazie. Klasycznym przykładem jest transfer pieniędzy między kontami bankowymi: środki muszą zostać jednocześnie odjęte z jednego konta i dodane do drugiego. Gdyby pierwsza operacja się powiodła, a druga nie, pieniądze "zniknęłyby" z systemu.
+
+SQLite automatycznie rozpoczyna transakcję przy pierwszej operacji modyfikującej dane i utrzymuje ją do momentu wywołania commit() lub rollback(). Stan przed zatwierdzeniem można porównać do robienia notatek na kartce brulionu - zmiany są widoczne w ramach bieżącej sesji, ale nie zostają trwale zapisane do głównego dokumentu.
+
+Metoda commit() działa jak naciśnięcie przycisku "Zapisz" w edytorze tekstu - wszystkie dotychczasowe zmiany zostają trwale zapisane do bazy danych. Z kolei rollback() to jak funkcja "Cofnij" - przywraca stan sprzed rozpoczęcia transakcji, jakby żadne operacje nie zostały wykonane.
+
+Właściwość ACID (Atomicity, Consistency, Isolation, Durability) definiuje standardy, które musi spełniać każdy niezawodny system bazodanowy. Atomowość oznacza, że transakcja jest niepodzielna. Spójność zapewnia, że baza pozostaje w poprawnym stanie przed i po transakcji. Izolacja gwarantuje, że równoczesne transakcje nie interferują ze sobą. Trwałość oznacza, że zatwierdzone zmiany pozostają w bazie nawet po awarii systemu.
+
+Etap 2: Projektowanie Struktury Danych - Architektura Informacji
+Typy Danych i Ograniczenia
+cursor.execute("""
+    CREATE TABLE products (
+        id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL,
+        price REAL CHECK (price > 0),
+        quantity INTEGER DEFAULT 0,
+        created_at TEXT DEFAULT CURRENT_TIMESTAMP
+    )
+""")
+Projektowanie schematu bazy danych przypomina projektowanie architektoniczne budynku. Tak jak architect musi przemyśleć rozmieszczenie pokoi, ich wielkość i przeznaczenie przed rozpoczęciem budowy, projektant bazy danych musi określić strukturę tabel, typy przechowywanych danych i relacje między nimi.
+
+SQLite implementuje system typów dynamicznych, co oznacza, że deklaracje typów służą głównie jako wskazówki dla programisty i mechanizmów walidacji. W przeciwieństwie do tradycyjnych baz danych, SQLite pozwala przechowywać wartości różnych typów w tej samej kolumnie. Jednak dobrą praktyką jest konsekwentne stosowanie zadeklarowanych typów.
+
+Typ INTEGER w SQLite może przechowywać liczby całkowite o różnej wielkości, automatycznie dostosowując rozmiar do wartości. TEXT przechowuje łańcuchy znaków w kodowaniu UTF-8, co zapewnia obsługę wszystkich języków świata. REAL przechowuje liczby zmiennoprzecinkowe z podwójną precyzją, odpowiednie do obliczeń finansowych i naukowych.
+
+Ograniczenie NOT NULL można porównać do obowiązkowych pól w formularzu - zapewnia, że krytyczne informacje zawsze będą dostępne. CHECK pozwala na definiowanie własnych reguł walidacji, działając jak strażnik sprawdzający czy wprowadzane dane spełniają określone warunki. DEFAULT ustala wartość, która zostanie automatycznie wstawiona, jeśli użytkownik nie poda własnej.
+
+Relacje Między Tabelami
+# Tabela nadrzędna
+cursor.execute("""
+    CREATE TABLE authors (
+        id INTEGER PRIMARY KEY,
+        name TEXT NOT NULL
+    )
+""")
+
+# Tabela podrzędna z kluczem obcym
+cursor.execute("""
+    CREATE TABLE books (
+        id INTEGER PRIMARY KEY,
+        title TEXT NOT NULL,
+        author_id INTEGER,
+        FOREIGN KEY (author_id) REFERENCES authors(id)
+    )
+""")
+
+# Włączenie kontroli kluczy obcych
+cursor.execute("PRAGMA foreign_keys = ON")
+Relacje między tabelami stanowią serce projektowania relacyjnych baz danych. Klucz obcy (foreign key) działa jak most łączący dwie tabele, umożliwiając przechowywanie powiązanych informacji w sposób znormalizowany. Można to porównać do systemu katalogowego w bibliotece, gdzie książka ma numer, który odsyła do karty z informacjami o autorze.
+
+Normalizacja bazy danych to proces eliminowania redundancji poprzez rozbicie informacji na logiczne części. Zamiast przechowywać pełne dane autora przy każdej książce, przechowuje się je raz w tabeli autorów, a książki odnoszą się do nich przez identyfikator. To podejście oszczędza miejsce i zapewnia spójność - zmiana danych autora automatycznie wpływa na wszystkie jego książki.
+
+Pragma "foreign_keys = ON" włącza mechanizm integralności referencyjnej w SQLite. Bez tego ustawienia klucze obce służą jedynie jako dokumentacja - baza nie sprawdza czy przywoływane rekordy rzeczywiście istnieją. Po włączeniu, SQLite blokuje operacje, które mogłyby naruszyć spójność relacji, na przykład usunięcie autora, który ma przypisane książki.
+
+Relacja jeden-do-wielu (one-to-many) jest najczęstszą formą powiązania w bazach danych. Jeden autor może mieć wiele książek, ale każda książka ma tylko jednego głównego autora. W modelowaniu używa się także relacji jeden-do-jednego (np. użytkownik i jego profil) oraz wiele-do-wielu (np. studenci i kursy, gdzie student może uczęszczać na wiele kursów, a każdy kurs może mieć wielu studentów).
+
+import sqlite3
+from contextlib import contextmanager
+
+class LibraryDatabase:
+    def __init__(self, db_name="library.db"):
+        self.db_name = db_name
+    
+    @contextmanager
+    def get_connection(self):
+        conn = sqlite3.connect(self.db_name)
+        try:
+            yield conn
+            conn.commit()
+        except Exception:
+            conn.rollback()
+            raise
+        finally:
+            conn.close()
+    
+    def create_tables(self):
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("PRAGMA foreign_keys = ON")
+            
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS authors (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    name TEXT NOT NULL,
+                    birth_year INTEGER CHECK (birth_year > 1000),
+                    email TEXT UNIQUE,
+                    nationality TEXT DEFAULT 'Unknown'
+                )
+            """)
+            
+            cursor.execute("""
+                CREATE TABLE IF NOT EXISTS books (
+                    id INTEGER PRIMARY KEY AUTOINCREMENT,
+                    title TEXT NOT NULL,
+                    author_id INTEGER NOT NULL,
+                    price REAL CHECK (price >= 0),
+                    pages INTEGER CHECK (pages > 0),
+                    FOREIGN KEY (author_id) REFERENCES authors(id)
+                )
+            """)
+    
+    def add_sample_data(self):
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("PRAGMA foreign_keys = ON")
+            
+            authors = [
+                ("Virginia Woolf", 1882, "woolf@example.com", "British"),
+                ("James Joyce", 1882, "joyce@example.com", "Irish")
+            ]
+            cursor.executemany("INSERT INTO authors (name, birth_year, email, nationality) VALUES (?, ?, ?, ?)", authors)
+            
+            cursor.execute("SELECT id FROM authors WHERE name = ?", ("Virginia Woolf",))
+            woolf_id = cursor.fetchone()[0]
+            
+            books = [
+                ("Mrs. Dalloway", woolf_id, 15.99, 194),
+                ("To the Lighthouse", woolf_id, 16.99, 209)
+            ]
+            cursor.executemany("INSERT INTO books (title, author_id, price, pages) VALUES (?, ?, ?, ?)", books)
+    
+    def demonstrate_crud(self):
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            cursor.execute("PRAGMA foreign_keys = ON")
+            conn.row_factory = sqlite3.Row
+            
+            # READ - różne metody pobierania
+            cursor.execute("SELECT * FROM authors")
+            all_authors = cursor.fetchall()
+            
+            cursor.execute("SELECT name FROM authors LIMIT 1")
+            first_author = cursor.fetchone()
+            
+            # JOIN
+            cursor.execute("""
+                SELECT b.title, b.price, a.name, a.nationality
+                FROM books b JOIN authors a ON b.author_id = a.id
+            """)
+            books_with_authors = cursor.fetchall()
+            
+            # UPDATE
+            cursor.execute("UPDATE books SET price = price * 1.1 WHERE author_id = ?", (1,))
+            
+            # DELETE z kontrolą integralności
+            try:
+                cursor.execute("DELETE FROM authors WHERE id = ?", (1,))
+            except sqlite3.IntegrityError:
+                pass  # Autor ma książki - nie można usunąć
+    
+    def demonstrate_transaction(self):
+        with self.get_connection() as conn:
+            cursor = conn.cursor()
+            
+            try:
+                cursor.execute("ALTER TABLE authors ADD COLUMN points INTEGER DEFAULT 100")
+            except sqlite3.OperationalError:
+                pass
+            
+            try:
+                cursor.execute("UPDATE authors SET points = points - 30 WHERE id = 1")
+                cursor.execute("UPDATE authors SET points = points + 30 WHERE id = 2")
+                # Transakcja zostanie automatycznie zatwierdzona przez context manager
+            except Exception:
+                # Rollback automatyczny przez context manager
+                raise
+
+def run_demo():
+    db = LibraryDatabase()
+    
+    db.create_tables()
+    db.add_sample_data()
+    db.demonstrate_crud()
+    db.demonstrate_transaction()
+
+if __name__ == "__main__":
+    run_demo()

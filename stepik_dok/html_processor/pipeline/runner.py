@@ -21,8 +21,9 @@ def run_pipeline(config):
             try:
                 file_path = os.path.join(input_dir, filename)
                 parsed_data = parser.parse_html_files(file_path)
+                # Count records based on the total number of rows across all tables
+                record_count = sum(len(table) for table in parsed_data.get('tables', []))
                 parsed_data_list.append((filename, parsed_data))
-                record_count = len(parsed_data)
                 log_info(f"Successfully parsed file: {filename} ({record_count} records)")
                 success += 1
                 total_records += record_count
