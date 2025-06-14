@@ -353,7 +353,11 @@ class TradePanel(QWidget):
         
         # Wyczyść poprzednie widgety
         for i in reversed(range(self.cities_layout.count())):
-            self.cities_layout.itemAt(i).widget().setParent(None)
+            item = self.cities_layout.itemAt(i)
+            if item is not None:
+                widget = item.widget()
+                if widget is not None:
+                    widget.setParent(None)
         
         # Dodaj widgety miast
         for city in self.game_engine.get_trading_cities().values():

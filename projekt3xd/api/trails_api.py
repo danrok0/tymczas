@@ -1,17 +1,77 @@
-import requests
-import re
-import os
-import json
-from typing import List, Dict, Any
-from functools import reduce
-from config import OVERPASS_API, OVERPASS_QUERY_TEMPLATE
+"""
+MODUŁ API SZLAKÓW TURYSTYCZNYCH - POBIERANIE DANYCH Z OVERPASS API
+=================================================================
+
+Ten moduł zawiera klasę TrailsAPI, która pobiera dane o szlakach turystycznych
+z OpenStreetMap używając Overpass API. Implementuje funkcjonalność wyszukiwania,
+przetwarzania i standaryzacji danych o trasach.
+
+FUNKCJONALNOŚCI:
+- Pobieranie szlaków turystycznych dla określonych miast/regionów
+- Przetwarzanie różnych formatów danych (odległości, wysokości)
+- Obliczanie poziomu trudności tras na podstawie wielu czynników
+- Kategoryzacja typów terenu i powierzchni
+- Zapisywanie danych do plików JSON (cache)
+
+ŹRÓDŁA DANYCH:
+- OpenStreetMap (OSM) przez Overpass API
+- Różne typy tras: hiking, walking, cycling, running
+- Obiekty turystyczne: parki, punkty widokowe, zabytki
+- Elementy naturalne: lasy, jeziora, wybrzeża
+
+AUTOR: System Rekomendacji Tras Turystycznych - Etap 4
+"""
+
+# ============================================================================
+# IMPORTY BIBLIOTEK
+# ============================================================================
+import requests                              # Biblioteka do zapytań HTTP
+import re                                   # Wyrażenia regularne
+import os                                   # Operacje na systemie plików
+import json                                 # Obsługa formatu JSON
+from typing import List, Dict, Any          # Podpowiedzi typów
+from functools import reduce                # Funkcje funkcyjne (reduce)
+from config import OVERPASS_API, OVERPASS_QUERY_TEMPLATE  # Konfiguracja API
+
+# ============================================================================
+# GŁÓWNA KLASA API SZLAKÓW
+# ============================================================================
 
 class TrailsAPI:
+    """
+    Klasa do pobierania i przetwarzania danych o szlakach turystycznych z Overpass API.
+    
+    Ta klasa implementuje kompleksowy system pobierania danych o trasach turystycznych
+    z OpenStreetMap, ich przetwarzania i standaryzacji. Wykorzystuje programowanie
+    funkcyjne (map, reduce, filter) do efektywnego przetwarzania danych.
+    
+    Attributes:
+        base_url: URL bazowy Overpass API
+        data_dir: Katalog do zapisywania plików z danymi
+    
+    Przykład użycia:
+        api = TrailsAPI()
+        trails = api.get_hiking_trails("Gdańsk")
+        print(f"Znaleziono {len(trails)} szlaków")
+    """
+    
     def __init__(self):
+        """
+        Inicjalizacja klasy TrailsAPI.
+        
+        Ustawia URL bazowy API, tworzy katalog na dane jeśli nie istnieje.
+        Wszystkie dane będą zapisywane w katalogu 'api' w formacie JSON.
+        """
+        # URL bazowy Overpass API z pliku konfiguracyjnego
         self.base_url = OVERPASS_API
+        
+        # Katalog do przechowywania pobranych danych
         self.data_dir = "api"
+        
+        # Utworzenie katalogu jeśli nie istnieje
         if not os.path.exists(self.data_dir):
             os.makedirs(self.data_dir)
+            print(f"Utworzono katalog danych: {self.data_dir}")
 
     def _parse_distance(self, distance_str: str) -> float:
         """Konwertuje ciąg znaków z odległością na kilometry."""

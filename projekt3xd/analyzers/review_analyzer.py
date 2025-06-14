@@ -1,6 +1,20 @@
 """
-Klasa ReviewAnalyzer do analizy sentymentu i ekstrakcji informacji z recenzji użytkowników
-tras turystycznych zgodnie z wymaganiami z updatelist.txt.
+MODUŁ ANALIZY RECENZJI UŻYTKOWNIKÓW - SENTYMENT I EKSTRAKCJA DANYCH
+==================================================================
+
+Ten moduł zawiera klasę ReviewAnalyzer, która analizuje recenzje użytkowników
+tras turystycznych pod kątem sentymentu, ocen, dat i innych kluczowych informacji.
+
+FUNKCJONALNOŚCI:
+- Ekstrakcja ocen liczbowych w różnych formatach (1-5, 1-10, gwiazdki)
+- Analiza sentymentu tekstu (pozytywny, negatywny, neutralny)
+- Rozpoznawanie dat w różnych formatach polskich
+- Identyfikacja aspektów tras (widoki, trudność, oznakowanie, etc.)
+- Wykrywanie sezonowości (wiosna, lato, jesień, zima)
+- Agregacja statystyk z wielu recenzji
+
+WYMAGANIA: Implementacja zgodna z specyfikacją z updatelist.txt
+AUTOR: System Rekomendacji Tras Turystycznych - Etap 4
 """
 
 import re
@@ -10,23 +24,45 @@ import logging
 from datetime import datetime
 import statistics
 
-# Konfiguracja logowania
-logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger(__name__)
+# ============================================================================
+# KONFIGURACJA LOGOWANIA
+# ============================================================================
+logging.basicConfig(level=logging.INFO)    # Ustawienia logowania na poziom INFO
+logger = logging.getLogger(__name__)       # Logger specyficzny dla tego modułu
+
+# ============================================================================
+# STRUKTURY DANYCH
+# ============================================================================
 
 @dataclass
 class ReviewData:
-    """Struktura danych pojedynczej recenzji."""
-    text: str
-    rating: Optional[float] = None
-    sentiment: Optional[str] = None  # 'positive', 'negative', 'neutral'
-    date: Optional[str] = None
-    aspects: List[str] = None
-    season: Optional[str] = None
+    """
+    Struktura danych przechowująca informacje o pojedynczej recenzji użytkownika.
+    
+    Attributes:
+        text: Oryginalny tekst recenzji użytkownika
+        rating: Ocena liczbowa w skali 1-5 (None jeśli nie znaleziono)
+        sentiment: Wydźwięk emocjonalny ('positive', 'negative', 'neutral')
+        date: Data napisania recenzji w formacie YYYY-MM-DD
+        aspects: Lista aspektów trasy wspomnianych w recenzji
+        season: Pora roku wspomniana w recenzji ('wiosna', 'lato', 'jesień', 'zima')
+    
+    Wszystkie pola oprócz text są opcjonalne i mogą mieć wartość None.
+    """
+    text: str                                    # Tekst recenzji (wymagany)
+    rating: Optional[float] = None               # Ocena liczbowa 1-5
+    sentiment: Optional[str] = None              # 'positive', 'negative', 'neutral'
+    date: Optional[str] = None                   # Data w formacie YYYY-MM-DD
+    aspects: List[str] = None                    # Lista aspektów trasy
+    season: Optional[str] = None                 # Pora roku
     
     def __post_init__(self):
+        """
+        Inicjalizacja pustej listy aspektów jeśli nie została podana.
+        Wywoływana automatycznie po utworzeniu obiektu.
+        """
         if self.aspects is None:
-            self.aspects = []
+            self.aspects = []  # Pusta lista zamiast None
 
 @dataclass
 class ReviewAnalysis:

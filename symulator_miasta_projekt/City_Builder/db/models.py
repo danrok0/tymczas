@@ -369,3 +369,4 @@ class DatabaseManager:
         """Zamyka połączenie z bazą danych"""
         self.engine.dispose()
 
+

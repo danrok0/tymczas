@@ -59,11 +59,35 @@ class Building:
         """Returns path to the building image or None if using color"""
         base_path = os.path.join("assets", "tiles")
         images = {
+            # Infrastructure
             BuildingType.ROAD: "prostadroga.png",
             BuildingType.ROAD_CURVE: "drogazakręt.png", 
             BuildingType.SIDEWALK: "chodnik.png",
+            
+            # Residential
             BuildingType.HOUSE: "domek1.png",
-            BuildingType.CITY_HALL: "burmistrzbudynek.png"
+            BuildingType.RESIDENTIAL: "blok.png",
+            BuildingType.APARTMENT: "wiezowiec.png",
+            
+            # Commercial
+            BuildingType.COMMERCIAL: "targowisko.png",
+            BuildingType.MALL: "centumhandlowe.png",
+            
+            # Industrial
+            BuildingType.FACTORY: "fabryka.png",
+            BuildingType.POWER_PLANT: "elektrownia.png",
+            
+            # Public Services
+            BuildingType.CITY_HALL: "burmistrzbudynek.png",
+            BuildingType.HOSPITAL: "szpital.png",
+            BuildingType.SCHOOL: "szkoła.png",
+            BuildingType.UNIVERSITY: "uniwersytet.png",
+            BuildingType.POLICE: "komisariat_policji.png",
+            BuildingType.FIRE_STATION: "straz_pozarna.png",
+            
+            # Recreation
+            BuildingType.PARK: "park.png",
+            BuildingType.STADIUM: "stadion.png"
         }
         if self.building_type in images:
             return os.path.join(base_path, images[self.building_type])

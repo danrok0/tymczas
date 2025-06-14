@@ -1,22 +1,96 @@
-import requests
-import os
-import json
-from datetime import datetime, timedelta
-from typing import Dict, Any, List, Optional
-from functools import reduce
-from config import OPEN_METEO_API, CITY_COORDINATES
+"""
+MODUŁ API POGODY - POBIERANIE DANYCH METEOROLOGICZNYCH
+=====================================================
+
+Ten moduł zawiera klasę WeatherAPI, która pobiera dane pogodowe z różnych źródeł
+API meteorologicznych. Implementuje funkcjonalność pobierania prognoz pogody
+i danych historycznych dla potrzeb systemu rekomendacji tras.
+
+FUNKCJONALNOŚCI:
+- Pobieranie prognoz pogody na przyszłe dni (Open-Meteo API)
+- Pobieranie danych historycznych z lokalnych plików JSON
+- Przetwarzanie danych pogodowych (temperatura, opady, wiatr, nasłonecznienie)
+- Obsługa różnych formatów dat i zakresów czasowych
+- Mapowanie miast na współrzędne geograficzne
+
+ŹRÓDŁA DANYCH:
+- Open-Meteo API (prognozy pogody)
+- Visual Crossing API (dane historyczne - wymaga klucza)
+- OpenWeatherMap API (dane historyczne - wymaga klucza)
+- World Weather Online API (dane historyczne - wymaga klucza)
+- Lokalne pliki JSON (cache danych historycznych)
+
+AUTOR: System Rekomendacji Tras Turystycznych - Etap 4
+"""
+
+# ============================================================================
+# IMPORTY BIBLIOTEK
+# ============================================================================
+import requests                              # Biblioteka do zapytań HTTP
+import os                                   # Operacje na systemie plików
+import json                                 # Obsługa formatu JSON
+from datetime import datetime, timedelta    # Operacje na datach i czasie
+from typing import Dict, Any, List, Optional  # Podpowiedzi typów
+from functools import reduce                # Funkcje funkcyjne (reduce)
+from config import OPEN_METEO_API, CITY_COORDINATES  # Konfiguracja API
+
+# ============================================================================
+# GŁÓWNA KLASA API POGODY
+# ============================================================================
 
 class WeatherAPI:
+    """
+    Klasa do pobierania i przetwarzania danych pogodowych z różnych źródeł API.
+    
+    Ta klasa implementuje kompleksowy system pobierania danych meteorologicznych,
+    obsługując zarówno prognozy pogody jak i dane historyczne. Wykorzystuje
+    programowanie funkcyjne do przetwarzania danych pogodowych.
+    
+    Attributes:
+        base_url: URL bazowy Open-Meteo API
+        forecast_url: URL do prognoz pogody
+        history_url: URL do danych historycznych
+        weather_data_file: Ścieżka do pliku z danymi pogodowymi
+        
+    Przykład użycia:
+        api = WeatherAPI()
+        weather = api.get_weather_forecast("Gdańsk", "2024-06-01")
+        print(f"Temperatura: {weather['temperature_avg']}°C")
+    """
+    
     def __init__(self):
-        self.base_url = "https://api.open-meteo.com/v1"
-        self.forecast_url = f"{self.base_url}/forecast"
-        self.history_url = f"{self.base_url}/archive"
+        """
+        Inicjalizacja klasy WeatherAPI.
+        
+        Ustawia URL-e różnych serwisów pogodowych i ścieżki do plików danych.
+        Konfiguruje dostęp do wielu API pogodowych (niektóre wymagają kluczy).
+        """
+        # ====================================================================
+        # KONFIGURACJA OPEN-METEO API (darmowe, bez klucza)
+        # ====================================================================
+        self.base_url = "https://api.open-meteo.com/v1"           # URL bazowy
+        self.forecast_url = f"{self.base_url}/forecast"           # Prognozy
+        self.history_url = f"{self.base_url}/archive"             # Historia
+        
+        # ====================================================================
+        # KONFIGURACJA DODATKOWYCH API (wymagają kluczy - opcjonalne)
+        # ====================================================================
+        # Visual Crossing Weather API
         self.visual_crossing_url = "https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline"
         self.visual_crossing_api_key = "YOUR_API_KEY"  # Należy zastąpić prawdziwym kluczem API
+        
+        # OpenWeatherMap API
         self.openweather_url = "https://api.openweathermap.org/data/3.0/onecall/timemachine"
         self.openweather_api_key = "YOUR_API_KEY"  # Należy zastąpić prawdziwym kluczem API
+        
+        # World Weather Online API
         self.worldweather_url = "http://api.worldweatheronline.com/premium/v1/past-weather.ashx"
         self.worldweather_api_key = "YOUR_API_KEY"  # Należy zastąpić prawdziwym kluczem API
+        
+        # ====================================================================
+        # KONFIGURACJA PLIKÓW LOKALNYCH
+        # ====================================================================
+        # Plik z danymi pogodowymi (cache dla danych historycznych)
         self.weather_data_file = "api/weather_data.json"
 
     def _calculate_average_temperature(self, daily_data: Dict[str, List[float]]) -> float:
