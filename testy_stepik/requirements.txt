@@ -1,0 +1,19 @@
+# System Rekomendacji Tras - Wymagania
+# Projekt używa wyłącznie standardowych modułów Pythona
+
+# Wymagana wersja Python
+# python>=3.6
+
+# Wszystkie używane moduły są częścią standardowej biblioteki Python:
+# - unittest (testy jednostkowe)
+# - tempfile (tymczasowe pliki)
+# - csv (obsługa plików CSV)
+# - os (operacje na systemie plików)
+# - sys (funkcje systemowe)
+
+# Brak dodatkowych zależności - projekt używa tylko standardowych modułów Python
+# Python 3.6+
+
+# Opcjonalne narzędzia do rozwoju:
+# pytest>=6.0
+# coverage>=5.0 
